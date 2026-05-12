@@ -1,0 +1,63 @@
+
+{{ 'main-product-test-task.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #section-{{ section.id }} .main-product-test-task__content {
+    padding: {{ section.settings.padding_top_mobile }}px {{ section.settings.padding_right_mobile }}px {{ section.settings.padding_bottom_mobile }}px {{ section.settings.padding_left_mobile }}px;
+
+    @media screen and (min-width: 1201px) {
+      & {
+        padding: {{ section.settings.padding_top_desktop }}px {{ section.settings.padding_right_desktop }}px {{ section.settings.padding_bottom_desktop }}px {{ section.settings.padding_left_desktop }}px;
+      }
+    }
+  }
+{%- endstyle -%}
+
+<div id="section-{{ section.id }}" class="main-product-test-task-wrapper">
+  <div class="main-product-test-task">
+    <div class="mptt-media-col">
+      {%- assign featured_media = product.featured_media -%}
+      {%- if featured_media -%}
+        {{ featured_media | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '50vw' }}
+      {%- else -%}
+        {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+
+    <div class="main-product-test-task__content">
+      {% content_for 'blocks' %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Main Product Test Task",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content Padding (Desktop)"
+    },
+    { "type": "range", "id": "padding_top_desktop", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Top", "default": 40 },
+    { "type": "range", "id": "padding_bottom_desktop", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Bottom", "default": 40 },
+    { "type": "range", "id": "padding_left_desktop", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Left", "default": 40 },
+    { "type": "range", "id": "padding_right_desktop", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Right", "default": 40 },
+    {
+      "type": "header",
+      "content": "Content Padding (Mobile)"
+    },
+    { "type": "range", "id": "padding_top_mobile", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Top", "default": 20 },
+    { "type": "range", "id": "padding_bottom_mobile", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Bottom", "default": 20 },
+    { "type": "range", "id": "padding_left_mobile", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Left", "default": 20 },
+    { "type": "range", "id": "padding_right_mobile", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Right", "default": 20 }
+  ],
+  "blocks": [
+    { "type": "@theme" }
+  ],
+  "presets": [
+    {
+      "name": "Main Product Test Task"
+    }
+  ]
+}
+{% endschema %}

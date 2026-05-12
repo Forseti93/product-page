@@ -1,0 +1,47 @@
+
+{%- style -%}
+  #block-{{ block.id }} {
+    margin-top: {{ block.settings.margin_top_desktop }}px;
+
+    @media screen and (max-width: 767px) {
+      & {
+        margin-top: {{ block.settings.margin_top_mobile }}px;
+      }
+    }
+
+    @media screen and (max-width: {{ block.settings.visibility_breakpoint }}px) {
+      & {
+        display: {%- if block.settings.visible_on_mobile -%}block{%- else -%}none{%- endif -%};
+      }
+    }
+  }
+{%- endstyle -%}
+
+<div id="block-{{ block.id }}" class="mptt-block mptt-block--label" {{ block.shopify_attributes }}>
+  <span class="mptt-label" style="
+    color: {{ block.settings.text_color }};
+    background-color: {{ block.settings.bg_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  ">
+    {{ block.settings.text }}
+  </span>
+</div>
+
+{% schema %}
+{
+  "name": "Label (NEW)",
+  "settings": [
+    { "type": "text", "id": "text", "label": "Text", "default": "NEW" },
+    { "type": "color", "id": "text_color", "label": "Text Color", "default": "#000000" },
+    { "type": "color", "id": "bg_color", "label": "Background Color", "default": "#f4f4f4" },
+    { "type": "range", "id": "border_radius", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Border Radius", "default": 4 },
+    { "type": "range", "id": "margin_top_desktop", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Desktop)", "default": 10 },
+    { "type": "range", "id": "margin_top_mobile", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Mobile)", "default": 10 },
+    { "type": "checkbox", "id": "visible_on_mobile", "label": "Visible on Mobile", "default": false },
+    { "type": "range", "id": "visibility_breakpoint", "min": 450, "max": 1450, "step": 50, "unit": "px", "label": "Visibility Breakpoint", "default": 1200 }
+  ],
+  "presets": [
+    { "name": "Label (NEW)" }
+  ]
+}
+{% endschema %}

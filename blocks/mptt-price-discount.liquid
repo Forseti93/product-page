@@ -1,0 +1,52 @@
+
+{%- style -%}
+  #block-{{ block.id }} .mptt-price-discount {
+    margin-top: {{ block.settings.margin_top_desktop }}px;
+
+    @media screen and (max-width: 767px) {
+      & {
+        margin-top: {{ block.settings.margin_top_mobile }}px;
+      }
+    }
+  }
+{%- endstyle -%}
+
+<div id="block-{{ block.id }}" class="mptt-block mptt-block--price-discount" {{ block.shopify_attributes }}>
+  <div class="mptt-price-discount">
+    {%- if block.settings.icon != 'none' -%}
+      <span class="mptt-price-discount__icon" style="color: {{ block.settings.icon_color }}">
+        {% render 'icon', icon: block.settings.icon %}
+      </span>
+    {%- endif -%}
+    <span class="mptt-price-discount__text" style="
+      font-size: {{ block.settings.font_size }}px;
+      font-weight: {{ block.settings.font_weight }};
+      color: {{ block.settings.color }};
+    ">
+      {%- assign amount = block.settings.discount_amount | money -%}
+      {{ 'main_product_test_task.pay_for_discount' | t: price: amount }}
+    </span>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Label & Icon (Discount)",
+  "settings": [
+    { "type": "text", "id": "icon", "label": "Icon Name", "default": "truck" },
+    { "type": "color", "id": "icon_color", "label": "Icon Color", "default": "#000000" },
+    { "type": "range", "id": "font_size", "min": 10, "max": 40, "step": 1, "unit": "px", "label": "Font Size", "default": 16 },
+    { "type": "select", "id": "font_weight", "label": "Font Weight", "options": [
+      { "value": "400", "label": "Normal" },
+      { "value": "700", "label": "Bold" }
+    ], "default": "400" },
+    { "type": "color", "id": "color", "label": "Color", "default": "#000000" },
+    { "type": "number", "id": "discount_amount", "label": "Discount Threshold (cents)", "default": 5000 },
+    { "type": "range", "id": "margin_top_desktop", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Desktop)", "default": 15 },
+    { "type": "range", "id": "margin_top_mobile", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Mobile)", "default": 10 }
+  ],
+  "presets": [
+    { "name": "Label & Icon (Discount)" }
+  ]
+}
+{% endschema %}

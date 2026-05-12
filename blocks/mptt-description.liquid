@@ -1,0 +1,42 @@
+
+{%- style -%}
+  #block-{{ block.id }} .mptt-description {
+    font-size: {{ block.settings.font_size_desktop }}px;
+    font-weight: {{ block.settings.font_weight }};
+    color: {{ block.settings.color }};
+    margin-top: {{ block.settings.margin_top_desktop }}px;
+
+    @media screen and (max-width: 767px) {
+      & {
+        margin-top: {{ block.settings.margin_top_mobile }}px;
+        font-size: {{ block.settings.font_size_mobile }}px;
+      }
+    }
+  }
+{%- endstyle -%}
+
+<div id="block-{{ block.id }}" class="mptt-block mptt-block--description" {{ block.shopify_attributes }}>
+  <div class="mptt-description">
+    {{ product.description }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Description",
+  "settings": [
+    { "type": "range", "id": "font_size_desktop", "min": 10, "max": 50, "step": 1, "unit": "px", "label": "Font Size (Desktop)", "default": 16 },
+    { "type": "range", "id": "font_size_mobile", "min": 10, "max": 50, "step": 1, "unit": "px", "label": "Font Size (Mobile)", "default": 14 },
+    { "type": "select", "id": "font_weight", "label": "Font Weight", "options": [
+      { "value": "400", "label": "Normal" },
+      { "value": "700", "label": "Bold" }
+    ], "default": "400" },
+    { "type": "color", "id": "color", "label": "Color", "default": "#333333" },
+    { "type": "range", "id": "margin_top_desktop", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Desktop)", "default": 15 },
+    { "type": "range", "id": "margin_top_mobile", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Mobile)", "default": 10 }
+  ],
+  "presets": [
+    { "name": "Description" }
+  ]
+}
+{% endschema %}

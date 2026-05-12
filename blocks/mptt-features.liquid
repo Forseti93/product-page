@@ -1,0 +1,106 @@
+
+{%- style -%}
+  #block-{{ block.id }} {
+    & .mptt-features {
+      margin-top: {{ block.settings.margin_top_outer }}px;
+      gap: {{ block.settings.item_gap }}px;
+      align-items: {{ block.settings.align }};
+    }
+    & .mptt-features__item {
+      gap: {{ block.settings.gap_icon_text }}px;
+    }
+    & .mptt-features__icon {
+      background-color: {{ block.settings.icon_bg }};
+      border-radius: {{ block.settings.icon_radius }}%;
+      padding: {{ block.settings.icon_padding_desktop }}px;
+      width: {{ block.settings.icon_size_desktop }}px;
+      height: {{ block.settings.icon_size_desktop }}px;
+      color: {{ block.settings.icon_color }};
+
+      @media screen and (max-width: 767px) {
+        & {
+          padding: {{ block.settings.icon_padding_mobile }}px;
+          width: {{ block.settings.icon_size_mobile }}px;
+          height: {{ block.settings.icon_size_mobile }}px;
+        }
+      }
+    }
+    & .mptt-features__text {
+      color: {{ block.settings.text_color }};
+      font-size: {{ block.settings.font_size_desktop }}px;
+      font-weight: {{ block.settings.font_weight_desktop }};
+
+      @media screen and (max-width: 767px) {
+        & {
+          font-size: {{ block.settings.font_size_mobile }}px;
+          font-weight: {{ block.settings.font_weight_mobile }};
+        }
+      }
+    }
+  }
+{%- endstyle -%}
+
+<div id="block-{{ block.id }}" class="mptt-block mptt-block--features" {{ block.shopify_attributes }}>
+  <div class="mptt-features">
+    {%- for i in (1..5) -%}
+      {%- capture icon_key -%}icon_{{ i }}{%- endcapture -%}
+      {%- capture text_key -%}text_{{ i }}{%- endcapture -%}
+      {%- if block.settings[icon_key] != 'none' or block.settings[text_key] != blank -%}
+        <div class="mptt-features__item">
+          <div class="mptt-features__icon">
+            {% render 'icon', icon: block.settings[icon_key] %}
+          </div>
+          <span class="mptt-features__text">
+            {{ block.settings[text_key] }}
+          </span>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Features Block",
+  "settings": [
+    { "type": "color", "id": "icon_color", "label": "Icon Color", "default": "#000000" },
+    { "type": "color", "id": "icon_bg", "label": "Icon Background", "default": "#f4f4f4" },
+    { "type": "range", "id": "icon_radius", "min": 0, "max": 50, "step": 1, "unit": "%", "label": "Icon BG Border Radius", "default": 50 },
+    { "type": "range", "id": "icon_size_desktop", "min": 10, "max": 100, "step": 1, "unit": "px", "label": "Icon Size (Desktop)", "default": 40 },
+    { "type": "range", "id": "icon_size_mobile", "min": 10, "max": 100, "step": 1, "unit": "px", "label": "Icon Size (Mobile)", "default": 30 },
+    { "type": "range", "id": "icon_padding_desktop", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Icon BG Padding (Desktop)", "default": 4 },
+    { "type": "range", "id": "icon_padding_mobile", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Icon BG Padding (Mobile)", "default": 4 },
+    { "type": "color", "id": "text_color", "label": "Text Color", "default": "#000000" },
+    { "type": "range", "id": "font_size_desktop", "min": 10, "max": 50, "step": 1, "unit": "px", "label": "Text Font Size (Desktop)", "default": 14 },
+    { "type": "range", "id": "font_size_mobile", "min": 10, "max": 50, "step": 1, "unit": "px", "label": "Text Font Size (Mobile)", "default": 12 },
+    { "type": "range", "id": "font_weight_desktop", "min": 100, "max": 900, "step": 100, "label": "Text Font Weight (Desktop)", "default": 400 },
+    { "type": "range", "id": "font_weight_mobile", "min": 100, "max": 900, "step": 100, "label": "Text Font Weight (Mobile)", "default": 400 },
+    { "type": "range", "id": "margin_top_outer", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Block)", "default": 20 },
+    { "type": "range", "id": "gap_icon_text", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Gap between icon and text", "default": 10 },
+    { "type": "range", "id": "item_gap", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Gap between items", "default": 15 },
+    { "type": "select", "id": "align", "label": "Align Method", "options": [
+      { "value": "flex-start", "label": "Start" },
+      { "value": "center", "label": "Center" },
+      { "value": "flex-end", "label": "Right" }
+    ], "default": "flex-start" },
+    { "type": "header", "content": "Feature 1" },
+    { "type": "text", "id": "icon_1", "label": "Icon 1", "default": "lightning_bolt" },
+    { "type": "text", "id": "text_1", "label": "Text 1", "default": "Supports daily energy" },
+    { "type": "header", "content": "Feature 2" },
+    { "type": "text", "id": "icon_2", "label": "Icon 2", "default": "leaf" },
+    { "type": "text", "id": "text_2", "label": "Text 2", "default": "Plant-based formula" },
+    { "type": "header", "content": "Feature 3" },
+    { "type": "text", "id": "icon_3", "label": "Icon 3", "default": "recycle" },
+    { "type": "text", "id": "text_3", "label": "Text 3", "default": "No added sugar" },
+    { "type": "header", "content": "Feature 4" },
+    { "type": "text", "id": "icon_4", "label": "Icon 4", "default": "none" },
+    { "type": "text", "id": "text_4", "label": "Text 4" },
+    { "type": "header", "content": "Feature 5" },
+    { "type": "text", "id": "icon_5", "label": "Icon 5", "default": "none" },
+    { "type": "text", "id": "text_5", "label": "Text 5" }
+  ],
+  "presets": [
+    { "name": "Features Block" }
+  ]
+}
+{% endschema %}
