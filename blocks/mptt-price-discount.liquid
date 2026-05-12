@@ -33,17 +33,22 @@
 {
   "name": "Label & Icon (Discount)",
   "settings": [
+    { "type": "header", "content": "Content" },
     { "type": "text", "id": "icon", "label": "Icon Name", "default": "truck" },
-    { "type": "color", "id": "icon_color", "label": "Icon Color", "default": "#000000" },
-    { "type": "range", "id": "font_size", "min": 10, "max": 40, "step": 1, "unit": "px", "label": "Font Size", "default": 16 },
+    { "type": "number", "id": "discount_amount", "label": "Discount Threshold (cents)", "default": 5000 },
+    { "type": "header", "content": "General" },
+    { "type": "header", "content": "Text" },
+    { "type": "range", "id": "font_size", "min": 10, "max": 40, "step": 1, "unit": "px", "label": "Font Size", "default": 18 },
     { "type": "select", "id": "font_weight", "label": "Font Weight", "options": [
       { "value": "400", "label": "Normal" },
       { "value": "700", "label": "Bold" }
     ], "default": "400" },
-    { "type": "color", "id": "color", "label": "Color", "default": "#000000" },
-    { "type": "number", "id": "discount_amount", "label": "Discount Threshold (cents)", "default": 5000 },
-    { "type": "range", "id": "margin_top_desktop", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Desktop)", "default": 15 },
-    { "type": "range", "id": "margin_top_mobile", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Mobile)", "default": 10 }
+    { "type": "header", "content": "Color" },
+    { "type": "color", "id": "icon_color", "label": "Icon Color", "default": "#0F2918" },
+    { "type": "color", "id": "color", "label": "Color", "default": "#0F2918" },
+    { "type": "header", "content": "Spacings" },
+    { "type": "range", "id": "margin_top_desktop", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Desktop)", "default": 40 },
+    { "type": "range", "id": "margin_top_mobile", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Mobile)", "default": 20 }
   ],
   "presets": [
     { "name": "Label & Icon (Discount)" }

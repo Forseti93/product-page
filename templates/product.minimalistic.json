@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-test-task",
+      "blocks": {
+        "label": {
+          "type": "mptt-label-mobile-image",
+          "settings": {
+            "text": "NEW",
+            "text_color": "#0F2918",
+            "bg_color": "#F7FAF3",
+            "border_radius": 99,
+            "margin_top_desktop": 0,
+            "margin_top_mobile": 0,
+            "visible_on_mobile": true,
+            "visible_on_desktop": true,
+            "visibility_breakpoint": 1200
+          }
+        },
+        "title": {
+          "type": "mptt-title",
+          "settings": {
+            "font_size_desktop": 48,
+            "font_size_mobile": 32,
+            "font_weight": "700",
+            "color": "#0F2918",
+            "margin_top_desktop": 16,
+            "margin_top_mobile": 12
+          }
+        },
+        "description": {
+          "type": "mptt-description",
+          "settings": {
+            "font_size_desktop": 20,
+            "font_size_mobile": 16,
+            "font_weight": "400",
+            "color": "#0F2918CC",
+            "margin_top_desktop": 16,
+            "margin_top_mobile": 12
+          }
+        },
+        "price": {
+          "type": "mptt-price-discount",
+          "settings": {
+            "icon": "truck",
+            "icon_color": "#0F2918",
+            "font_size": 18,
+            "font_weight": "400",
+            "color": "#0F2918",
+            "discount_amount": 5000,
+            "margin_top_desktop": 40,
+            "margin_top_mobile": 20
+          }
+        },
+        "buy_now": {
+          "type": "mptt-buy-now",
+          "settings": {
+            "text": "*Buy Now - *$25",
+            "icon": "arrow",
+            "bg_color": "#0F2918",
+            "bg_color_hover": "#1a4a2a",
+            "text_color": "#FFFFFF",
+            "text_color_hover": "#FFFFFF",
+            "padding_vertical": 16,
+            "padding_horizontal": 16,
+            "margin_top": 40
+          }
+        },
+        "features": {
+          "type": "mptt-features",
+          "settings": {
+            "icon_color": "#0F2918",
+            "icon_bg": "#F7FAF3",
+            "icon_radius": 50,
+            "icon_size_desktop": 64,
+            "icon_size_mobile": 48,
+            "icon_padding_desktop": 16,
+            "icon_padding_mobile": 12,
+            "text_color": "#0F2918CC",
+            "font_size_desktop": 14,
+            "font_size_mobile": 12,
+            "font_weight_desktop": 400,
+            "font_weight_mobile": 400,
+            "margin_top_outer": 40,
+            "gap_icon_text": 12,
+            "item_gap": 40,
+            "align": "center",
+            "text_1": "Supports daily energy",
+            "text_2": "Plant-based formula",
+            "text_3": "No added sugar"
+          }
+        }
+      },
+      "block_order": [
+        "label",
+        "title",
+        "description",
+        "price",
+        "buy_now",
+        "features"
+      ],
+      "settings": {
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_left_desktop": 60,
+        "padding_right_desktop": 60,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30,
+        "padding_left_mobile": 20,
+        "padding_right_mobile": 20
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

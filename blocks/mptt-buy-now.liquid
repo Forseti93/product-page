@@ -56,16 +56,20 @@
 {
   "name": "Buy Now Button",
   "settings": [
+    { "type": "header", "content": "Content" },
     { "type": "text", "id": "text", "label": "Button Text", "default": "*Buy Now - *$25" },
     { "type": "product", "id": "product", "label": "Product" },
     { "type": "text", "id": "icon", "label": "Icon Name", "default": "arrow" },
-    { "type": "color", "id": "bg_color", "label": "Background Color", "default": "#000000" },
-    { "type": "color", "id": "bg_color_hover", "label": "Hover Background Color", "default": "#333333" },
+    { "type": "header", "content": "General" },
+    { "type": "header", "content": "Color" },
+    { "type": "color", "id": "bg_color", "label": "Background Color", "default": "#0F2918" },
+    { "type": "color", "id": "bg_color_hover", "label": "Hover Background Color", "default": "#1a4a2a" },
     { "type": "color", "id": "text_color", "label": "Text Color", "default": "#ffffff" },
     { "type": "color", "id": "text_color_hover", "label": "Hover Text Color", "default": "#ffffff" },
-    { "type": "range", "id": "padding_vertical", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Padding Top/Bottom", "default": 15 },
-    { "type": "range", "id": "padding_horizontal", "min": 0, "max": 100, "step": 1, "unit": "px", "label": "Padding Left/Right", "default": 30 },
-    { "type": "range", "id": "margin_top", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top", "default": 20 }
+    { "type": "header", "content": "Spacings" },
+    { "type": "range", "id": "padding_vertical", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Padding Top/Bottom", "default": 16 },
+    { "type": "range", "id": "padding_horizontal", "min": 0, "max": 100, "step": 1, "unit": "px", "label": "Padding Left/Right", "default": 16 },
+    { "type": "range", "id": "margin_top", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top", "default": 40 }
   ],
   "presets": [
     { "name": "Buy Now Button" }

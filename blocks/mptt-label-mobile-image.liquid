@@ -1,4 +1,3 @@
-
 {%- style -%}
   #block-{{ block.id }} {
     margin-top: {{ block.settings.margin_top_desktop }}px;
@@ -11,52 +10,94 @@
 
     @media screen and (max-width: {{ block.settings.visibility_breakpoint }}px) {
       & {
-        display: {%- if block.settings.visible_on_mobile -%}block{%- else -%}none{%- endif -%};
+        display: {%- if block.settings.visible_on_mobile -%}inline-flex{%- else -%}none{%- endif -%};
       }
     }
 
     @media screen and (min-width: {{ block.settings.visibility_breakpoint | plus: 1 }}px) {
       & {
-        display: {%- if block.settings.visible_on_desktop -%}block{%- else -%}none{%- endif -%};
+        display: {%- if block.settings.visible_on_desktop -%}inline-flex{%- else -%}none{%- endif -%};
       }
+    }
+
+    & .mptt-label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 12px 6px 12px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: {{ block.settings.text_color }};
+      background-color: {{ block.settings.bg_color }};
+      border-radius: {{ block.settings.border_radius }}px;
+      text-transform: uppercase;
     }
   }
 {%- endstyle -%}
 
-<div id="block-{{ block.id }}" class="mptt-block mptt-block--label-mobile-image" {{ block.shopify_attributes }}>
-  <div class="mptt-mobile-image">
-    {%- if product.featured_media -%}
-       {{ product.featured_media | image_url: width: 800 | image_tag: loading: 'lazy', class: 'mptt-img' }}
-    {%- endif -%}
-     <span class="mptt-label" style="
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      color: {{ block.settings.text_color }};
-      background-color: {{ block.settings.bg_color }};
-      border-radius: {{ block.settings.border_radius }}px;
-    ">
-      {{ block.settings.text }}
-    </span>
-  </div>
+<div id="block-{{ block.id }}" class="mptt-block mptt-block--label" {{ block.shopify_attributes }}>
+  <span class="mptt-label">
+    {{ block.settings.text }}
+  </span>
 </div>
 
 {% schema %}
 {
-  "name": "Label & Mobile Image",
+  "name": "Label",
   "settings": [
+    { "type": "header", "content": "Content" },
     { "type": "text", "id": "text", "label": "Text", "default": "NEW" },
-    { "type": "color", "id": "text_color", "label": "Text Color", "default": "#000000" },
-    { "type": "color", "id": "bg_color", "label": "Background Color", "default": "#f4f4f4" },
-    { "type": "range", "id": "border_radius", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Border Radius", "default": 4 },
-    { "type": "range", "id": "margin_top_desktop", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Desktop)", "default": 10 },
-    { "type": "range", "id": "margin_top_mobile", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Mobile)", "default": 10 },
-    { "type": "checkbox", "id": "visible_on_mobile", "label": "Visible on Mobile", "default": false },
+    { "type": "header", "content": "General" },
+    { "type": "header", "content": "Color" },
+    { "type": "color", "id": "text_color", "label": "Text Color", "default": "#0F2918" },
+    { "type": "color", "id": "bg_color", "label": "Background Color", "default": "#F7FAF3" },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Border Radius",
+      "default": 99
+    },
+    { "type": "header", "content": "Spacings" },
+    {
+      "type": "range",
+      "id": "margin_top_desktop",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top (Desktop)",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top (Mobile)",
+      "default": 0
+    },
+    { "type": "header", "content": "Visibility" },
+    { "type": "checkbox", "id": "visible_on_mobile", "label": "Visible on Mobile", "default": true },
     { "type": "checkbox", "id": "visible_on_desktop", "label": "Visible on Desktop", "default": true },
-    { "type": "range", "id": "visibility_breakpoint", "min": 450, "max": 1450, "step": 50, "unit": "px", "label": "Visibility Breakpoint", "default": 1200 }
+    {
+      "type": "range",
+      "id": "visibility_breakpoint",
+      "min": 450,
+      "max": 1450,
+      "step": 50,
+      "unit": "px",
+      "label": "Visibility Breakpoint",
+      "default": 1200
+    }
   ],
-  "presets": [
-    { "name": "Label & Mobile Image" }
-  ]
+  "presets": [{ "name": "Label" }]
 }
 {% endschema %}
