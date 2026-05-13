@@ -20,52 +20,36 @@
 
   <script>
     (function() {
-      // 1. Get and remember the initial location
       const blockId = '{{ block.id }}';
-      // Look for the exact ID you added, or the shopify-block wrapper
       const element = document.getElementById(blockId) || document.getElementById('shopify-block-' + blockId) || document.querySelector('[data-shopify-editor-block*="' + blockId + '"]');
-      
-      if (!element) {
-        console.warn('Step 1: Element with ID "' + blockId + '" NOT found.');
-        return;
-      }
+
+      if (!element) return;
 
       const initialParent = element.parentElement;
       const initialNextSibling = element.nextSibling;
-      console.log('Step 1: Remembered initial location for block {{ block.id }}', { initialParent, initialNextSibling });
 
-      // 2. Get and remember the target location
       const targetId = '{{ block.settings.absolute_mobile_id }}';
       const breakpoint = {{ block.settings.breakpoint }};
-      console.log('Step 2: Target info', { targetId, breakpoint });
 
       const teleport = () => {
         const target = document.getElementById(targetId);
         const isMobile = window.innerWidth <= breakpoint;
 
         if (isMobile) {
-          // 3. Teleport to target location
           if (target && !target.contains(element)) {
-            console.log('Step 3: Teleporting block {{ block.id }} to target', target);
             target.appendChild(element);
-          } else if (!target) {
-            console.warn('Step 3: Target element with ID "' + targetId + '" NOT found.');
           }
         } else {
-          // 3. Teleport back to initial location
           if (element.parentElement !== initialParent) {
-            console.log('Step 3: Teleporting block {{ block.id }} back to initial location');
             initialParent.insertBefore(element, initialNextSibling);
           }
         }
       };
 
-      // Events to trigger teleportation
       window.addEventListener('resize', teleport);
       document.addEventListener('shopify:section:load', teleport);
       document.addEventListener('DOMContentLoaded', teleport);
 
-      // Run once immediately
       teleport();
     })();
   </script>
