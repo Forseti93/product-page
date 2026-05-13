@@ -17,6 +17,9 @@
     font-weight: {{ block.settings.font_weight }};
     color: {{ block.settings.color }};
 
+    & > *:nth-child(2) { margin-top: 0; }
+    & > *:last-child { margin-bottom: 0; }
+
     @media screen and (max-width: {{ block.settings.styles_breakpoint }}px) {
       & {
         font-size: {{ block.settings.font_size_mobile }}px;

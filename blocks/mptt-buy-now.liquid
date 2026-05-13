@@ -1,78 +1,240 @@
-
 {%- liquid
-  assign buy_product = block.settings.product
-  if buy_product == blank
-    assign buy_product = product
-  endif
+  assign buy_product = block.settings.product | default: product
   assign can_show = false
-  if buy_product != blank and buy_product.variants.size <= 1
+  if buy_product != blank and buy_product.available
     assign can_show = true
   endif
 -%}
 
 {%- if can_show -%}
   {%- style -%}
-    #block-{{ block.id }} .mptt-buy-button {
+    #shopify-block-{{ block.id }} {
+      margin-top: {{ block.settings.margin_top }}px;
+      display: flex;
+      justify-content: {{ block.settings.alignment }};
+    }
+
+    /* Styling for the Dynamic Checkout Button via supported CSS variables */
+    #shopify-block-{{ block.id }} shopify-accelerated-checkout {
+      --shopify-accelerated-checkout-button-block-size: {{ block.settings.button_height }}px;
+      --shopify-accelerated-checkout-button-border-radius: {{ block.settings.button_radius }}px;
+      width: {% if block.settings.button_width == 'full' %}100%{% else %}auto{% endif %};
+    }
+
+    /* Styling for the Custom Manual Button (Design Fallback) */
+    #shopify-block-{{ block.id }} .mptt-buy-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
       background-color: {{ block.settings.bg_color }};
       color: {{ block.settings.text_color }};
-      padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
-      margin-top: {{ block.settings.margin_top }}px;
+      height: {{ block.settings.button_height }}px;
+      padding: 0 {{ block.settings.padding_horizontal }}px;
+      border-radius: {{ block.settings.button_radius }}px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      width: {% if block.settings.button_width == 'full' %}100%{% else %}fit-content{% endif %};
+    }
 
-      &:hover {
-        background-color: {{ block.settings.bg_color_hover }} !important;
-        color: {{ block.settings.text_color_hover }} !important;
-      }
+    #shopify-block-{{ block.id }} .mptt-buy-button:hover {
+      opacity: 0.9;
+    }
+
+    #shopify-block-{{ block.id }} .mptt-buy-button__compare-price {
+      text-decoration: line-through;
+      font-size: 0.9em;
+      margin-left: 8px;
+    }
+
+    #shopify-block-{{ block.id }} .mptt-buy-button__price {
+      margin-left: 4px;
+    }
+
+    #shopify-block-{{ block.id }} .mptt-buy-button__highlight {
+      color: {{ block.settings.highlight_color }};
+    }
+    #shopify-block-{{ block.id }} .mptt-buy-button img {
+      width: {{ block.settings.icon_size }}px;
+      height: {{ block.settings.icon_size }}px;
+      object-fit: contain;
     }
   {%- endstyle -%}
 
-  <div id="block-{{ block.id }}" class="mptt-block mptt-block--buy-now" {{ block.shopify_attributes }}>
+  {%- if block.settings.show_dynamic_checkout -%}
+    {%- form 'product', buy_product -%}
+      <input type="hidden" name="id" value="{{ buy_product.selected_or_first_available_variant.id }}">
+      {{ form | payment_button }}
+    {%- endform -%}
+  {%- else -%}
     {%- liquid
       assign button_text = block.settings.text
-      assign parts = button_text | split: '*'
+      assign variant = buy_product.selected_or_first_available_variant
     -%}
     <a href="{{ routes.cart_add_url }}?id={{ buy_product.selected_or_first_available_variant.id }}&quantity=1" 
       class="mptt-buy-button" 
       aria-label="{{ 'products.product.add_to_cart' | t }}"
     >
       <span class="mptt-buy-button__text">
-        {%- for part in parts -%}
-          {%- if forloop.index == 2 -%}
-            <span class="mptt-buy-button__highlight">{{ part }}</span>
-          {%- else -%}
-            {{ part }}
-          {%- endif -%}
-        {%- endfor -%}
-      </span>
-      {%- if block.settings.icon != 'none' -%}
-        <span class="mptt-buy-button__icon">
-          {% render 'icon', icon: block.settings.icon %}
+        {{ button_text }}
+        <span class="mptt-buy-button__price">
+          {{ variant.price | money_without_trailing_zeros }}
         </span>
-      {%- endif -%}
+        {%- if variant.compare_at_price > variant.price -%}
+          <span class="mptt-buy-button__compare-price">
+            {{ variant.compare_at_price | money_without_trailing_zeros }}
+          </span>
+        {%- endif -%}
+      </span>
+    {%- if block.settings.icon != blank -%}
+      <span class="mptt-buy-button__icon">
+        {{ block.settings.icon | image_url: width: 40 | image_tag: loading: 'lazy' }}
+      </span>
+    {%- endif -%}
     </a>
-  </div>
+  {%- endif -%}
 {%- endif -%}
 
 {% schema %}
 {
   "name": "Buy Now Button",
   "settings": [
-    { "type": "header", "content": "Content" },
-    { "type": "text", "id": "text", "label": "Button Text", "default": "*Buy Now - *$25" },
-    { "type": "product", "id": "product", "label": "Product" },
-    { "type": "text", "id": "icon", "label": "Icon Name", "default": "arrow" },
-    { "type": "header", "content": "General" },
-    { "type": "header", "content": "Color" },
-    { "type": "color", "id": "bg_color", "label": "Background Color", "default": "#0F2918" },
-    { "type": "color", "id": "bg_color_hover", "label": "Hover Background Color", "default": "#1a4a2a" },
-    { "type": "color", "id": "text_color", "label": "Text Color", "default": "#ffffff" },
-    { "type": "color", "id": "text_color_hover", "label": "Hover Text Color", "default": "#ffffff" },
-    { "type": "header", "content": "Spacings" },
-    { "type": "range", "id": "padding_vertical", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Padding Top/Bottom", "default": 16 },
-    { "type": "range", "id": "padding_horizontal", "min": 0, "max": 100, "step": 1, "unit": "px", "label": "Padding Left/Right", "default": 16 },
-    { "type": "range", "id": "margin_top", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top", "default": 40 }
+    {
+      "type": "header",
+      "content": "Mode"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dynamic_checkout",
+      "label": "Use Shopify Dynamic Checkout",
+      "info": "Shows Shop Pay, Apple Pay, etc. Note: Style customization is limited by Shopify.",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Content (Custom Mode)"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Button Text",
+      "default": "Buy Now ",
+      "info": "Include a trailing space if you want a gap before the price."
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product",
+      "info": "Defaults to current product if empty"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon",
+      "label": "Icon"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Icon Size",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Style & Layout"
+    },
+    {
+      "type": "select",
+      "id": "button_width",
+      "label": "Button Width",
+      "options": [
+        { "value": "fit", "label": "Fit-content" },
+        { "value": "full", "label": "Full-width" }
+      ],
+      "default": "full"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignment",
+      "options": [
+        { "value": "flex-start", "label": "Start" },
+        { "value": "center", "label": "Center" },
+        { "value": "flex-end", "label": "End" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "button_height",
+      "min": 40,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "label": "Button Height",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Border Radius",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Horizontal Padding",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Colors (Custom Mode)"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#0F2918"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Highlight Color",
+      "default": "#ffffff"
+    }
   ],
   "presets": [
-    { "name": "Buy Now Button" }
+    {
+      "name": "Buy Now Button"
+    }
   ]
 }
 {% endschema %}

@@ -1,21 +1,55 @@
-
 {{ 'main-product-test-task.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  #section-{{ section.id }} .main-product-test-task {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: {{ section.settings.mobile_breakpoint | plus: 1 }}px) {
+    #section-{{ section.id }} .main-product-test-task {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+
+  @media screen and (max-width: {{ section.settings.mobile_breakpoint }}px) {
+    #section-{{ section.id }} .mptt-media-col {
+      height: {{ section.settings.image_height_mobile }}px;
+      width: 100%;
+    }
+    #section-{{ section.id }} .mptt-media-col img {
+      object-fit: {{ section.settings.image_fit_mobile }};
+    }
+  }
+
+  #section-{{ section.id }} .mptt-media-col img {
+    object-fit: {{ section.settings.image_fit_desktop }};
+  }
+
+  @media screen and (min-width: 1401px) {
+    #section-{{ section.id }} .mptt-media-col {
+      flex: 0 0 {{ section.settings.image_max_width_desktop }}px;
+    }
+  }
+
   #section-{{ section.id }} .main-product-test-task__content {
     padding: {{ section.settings.padding_top_mobile }}px {{ section.settings.padding_right_mobile }}px {{ section.settings.padding_bottom_mobile }}px {{ section.settings.padding_left_mobile }}px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
 
-    @media screen and (min-width: 1201px) {
-      & {
-        padding: {{ section.settings.padding_top_desktop }}px {{ section.settings.padding_right_desktop }}px {{ section.settings.padding_bottom_desktop }}px {{ section.settings.padding_left_desktop }}px;
-      }
+  @media screen and (min-width: {{ section.settings.mobile_breakpoint | plus: 1 }}px) {
+    #section-{{ section.id }} .main-product-test-task__content {
+      padding: {{ section.settings.padding_top_desktop }}px {{ section.settings.padding_right_desktop }}px {{ section.settings.padding_bottom_desktop }}px {{ section.settings.padding_left_desktop }}px;
     }
   }
 {%- endstyle -%}
 
 <div id="section-{{ section.id }}" class="main-product-test-task-wrapper">
   <div class="main-product-test-task">
-    <div class="mptt-media-col">
+    <div id="mptt-media-col" class="mptt-media-col">
       {%- assign featured_media = product.featured_media -%}
       {%- if featured_media -%}
         {{ featured_media | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '50vw' }}
@@ -36,24 +70,145 @@
   "settings": [
     {
       "type": "header",
+      "content": "Responsive Design"
+    },
+    {
+      "type": "number",
+      "id": "mobile_breakpoint",
+      "label": "Mobile Breakpoint (px)",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "image_height_mobile",
+      "min": 250,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Product image height (mobile)",
+      "default": 400
+    },
+    {
+      "type": "select",
+      "id": "image_fit_mobile",
+      "label": "Image fit styles (mobile)",
+      "options": [
+        { "value": "contain", "label": "Contain" },
+        { "value": "cover", "label": "Cover" }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "range",
+      "id": "image_max_width_desktop",
+      "min": 400,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "label": "Max-width for a product image (desktop)",
+      "info": "for ultra big screens, to prevent huge image",
+      "default": 700
+    },
+    {
+      "type": "select",
+      "id": "image_fit_desktop",
+      "label": "Image fit styles (desktop)",
+      "options": [
+        { "value": "contain", "label": "Contain" },
+        { "value": "cover", "label": "Cover" }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "header",
       "content": "Content Padding (Desktop)"
     },
-    { "type": "range", "id": "padding_top_desktop", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Top", "default": 60 },
-    { "type": "range", "id": "padding_bottom_desktop", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Bottom", "default": 60 },
-    { "type": "range", "id": "padding_left_desktop", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Left", "default": 60 },
-    { "type": "range", "id": "padding_right_desktop", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Right", "default": 60 },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_left_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Left",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_right_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Right",
+      "default": 60
+    },
     {
       "type": "header",
       "content": "Content Padding (Mobile)"
     },
-    { "type": "range", "id": "padding_top_mobile", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Top", "default": 30 },
-    { "type": "range", "id": "padding_bottom_mobile", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Bottom", "default": 30 },
-    { "type": "range", "id": "padding_left_mobile", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Left", "default": 20 },
-    { "type": "range", "id": "padding_right_mobile", "min": 0, "max": 100, "step": 5, "unit": "px", "label": "Right", "default": 20 }
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_left_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Left",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_right_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Right",
+      "default": 20
+    }
   ],
-  "blocks": [
-    { "type": "@theme" }
-  ],
+  "blocks": [{ "type": "@theme" }],
   "presets": [
     {
       "name": "Main Product Test Task"

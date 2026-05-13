@@ -24,6 +24,10 @@
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 16,
+            "absolute_mobile_id": "mptt-media-col",
+            "absolute_mobile_top": 50,
+            "absolute_mobile_left": 16,
+            "breakpoint": 1000,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -62,7 +66,7 @@
                 "border_radius": 99,
                 "margin_top_desktop": 0,
                 "margin_top_mobile": 0,
-                "visible_on_mobile": false,
+                "visible_on_mobile": true,
                 "styles_breakpoint": 1200
               },
               "blocks": {}
@@ -78,7 +82,7 @@
                 "border_radius": 99,
                 "margin_top_desktop": 0,
                 "margin_top_mobile": 0,
-                "visible_on_mobile": false,
+                "visible_on_mobile": true,
                 "styles_breakpoint": 1200
               },
               "blocks": {}
@@ -109,12 +113,12 @@
           "type": "mptt-description",
           "settings": {
             "text": "<p>Add your product description or custom text here.</p>",
-            "font_size_desktop": 20,
+            "font_size_desktop": 18,
             "font_size_mobile": 16,
             "font_weight": "400",
             "color": "#0f2918cc",
-            "margin_top_desktop": 16,
-            "margin_top_mobile": 12,
+            "margin_top_desktop": 20,
+            "margin_top_mobile": 16,
             "max_width_desktop": 1200,
             "max_width_mobile": 800,
             "styles_breakpoint": 1200
@@ -143,27 +147,33 @@
         "buy_now": {
           "type": "mptt-buy-now",
           "settings": {
-            "text": "*Buy Now - *$25",
+            "show_dynamic_checkout": false,
+            "text": "Buy Now -",
             "product": "",
-            "icon": "arrow",
-            "bg_color": "#0f2918",
-            "bg_color_hover": "#1a4a2a",
-            "text_color": "#ffffff",
-            "text_color_hover": "#ffffff",
-            "padding_vertical": 16,
+            "icon": "shopify://shop_images/arrow_right.svg",
+            "icon_size": 20,
+            "button_width": "full",
+            "alignment": "center",
+            "button_height": 55,
+            "button_radius": 12,
             "padding_horizontal": 16,
-            "margin_top": 40
+            "margin_top": 40,
+            "bg_color": "#0f2918",
+            "text_color": "#ffffff",
+            "highlight_color": "#ffffff"
           },
           "blocks": {}
         },
         "features": {
           "type": "mptt-features",
           "settings": {
+            "item_layout": "column",
+            "icon_1": "shopify://shop_images/energy_in_circle.svg",
             "text_1": "Supports daily energy",
+            "icon_2": "shopify://shop_images/plant.svg",
             "text_2": "Plant-based formula",
+            "icon_3": "shopify://shop_images/no_sugar.svg",
             "text_3": "No added sugar",
-            "text_4": "",
-            "text_5": "",
             "icon_radius": 50,
             "icon_size_desktop": 64,
             "icon_size_mobile": 48,
@@ -179,6 +189,7 @@
             "margin_top_outer": 40,
             "gap_icon_text": 12,
             "item_gap": 40,
+            "display_as": "row",
             "align": "center"
           },
           "blocks": {}
@@ -193,6 +204,11 @@
         "features"
       ],
       "settings": {
+        "mobile_breakpoint": 1000,
+        "image_height_mobile": 430,
+        "image_fit_mobile": "cover",
+        "image_max_width_desktop": 770,
+        "image_fit_desktop": "cover",
         "padding_top_desktop": 60,
         "padding_bottom_desktop": 60,
         "padding_left_desktop": 60,

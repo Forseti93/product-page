@@ -369,6 +369,6 @@
     }
   },
   "main_product_test_task": {
-    "pay_for_discount": "Free shiping over {{ price }}"
+    "pay_for_discount_html": "Free shipping over <strong>{{ price }}</strong>"
   }
 }
