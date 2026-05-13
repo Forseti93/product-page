@@ -1,57 +1,198 @@
-
 {%- style -%}
-  #block-{{ block.id }} .mptt-price-discount {
+  #shopify-block-{{ block.id }} {
     margin-top: {{ block.settings.margin_top_desktop }}px;
+    max-width: {{ block.settings.max_width_desktop }}px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: {{ block.settings.styles_breakpoint }}px) {
       & {
         margin-top: {{ block.settings.margin_top_mobile }}px;
+        max-width: {{ block.settings.max_width_mobile }}px;
+      }
+    }
+  }
+
+  #shopify-block-{{ block.id }} .mptt-price-discount {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  #shopify-block-{{ block.id }} .mptt-price-discount__icon {
+    flex-shrink: 0;
+    line-height: 0;
+  }
+
+  #shopify-block-{{ block.id }} .mptt-price-discount__icon img {
+    display: block;
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    object-fit: contain;
+    max-width: none;
+
+    @media screen and (max-width: {{ block.settings.styles_breakpoint }}px) {
+      & {
+        width: {{ block.settings.icon_size_mobile }}px;
+        height: {{ block.settings.icon_size_mobile }}px;
+      }
+    }
+  }
+
+  #shopify-block-{{ block.id }} .mptt-price-discount__text {
+    font-size: {{ block.settings.font_size_desktop }}px;
+    font-weight: {{ block.settings.font_weight }};
+    color: {{ block.settings.color }};
+
+    @media screen and (max-width: {{ block.settings.styles_breakpoint }}px) {
+      & {
+        font-size: {{ block.settings.font_size_mobile }}px;
       }
     }
   }
 {%- endstyle -%}
 
-<div id="block-{{ block.id }}" class="mptt-block mptt-block--price-discount" {{ block.shopify_attributes }}>
-  <div class="mptt-price-discount">
-    {%- if block.settings.icon != 'none' -%}
-      <span class="mptt-price-discount__icon" style="color: {{ block.settings.icon_color }}">
-        {% render 'icon', icon: block.settings.icon %}
+{%- assign amount_cents = block.settings.discount_amount | times: 100 -%}
+{%- assign amount = amount_cents | money_without_trailing_zeros -%}
+{%- if amount != blank -%}
+  <div
+    class="mptt-price-discount"
+    {{ block.shopify_attributes }}
+  >
+    {%- if block.settings.icon != blank -%}
+      <span class="mptt-price-discount__icon">
+        {{ block.settings.icon | image_url: width: block.settings.icon_size | image_tag: loading: 'lazy' }}
       </span>
     {%- endif -%}
-    <span class="mptt-price-discount__text" style="
-      font-size: {{ block.settings.font_size }}px;
-      font-weight: {{ block.settings.font_weight }};
-      color: {{ block.settings.color }};
-    ">
-      {%- assign amount = block.settings.discount_amount | money -%}
+    <span class="mptt-price-discount__text">
+      <span class="visually-hidden">Offer: </span>
       {{ 'main_product_test_task.pay_for_discount' | t: price: amount }}
     </span>
   </div>
-</div>
+{%- endif -%}
 
 {% schema %}
 {
   "name": "Label & Icon (Discount)",
   "settings": [
     { "type": "header", "content": "Content" },
-    { "type": "text", "id": "icon", "label": "Icon Name", "default": "truck" },
-    { "type": "number", "id": "discount_amount", "label": "Discount Threshold (cents)", "default": 5000 },
+    { "type": "image_picker", "id": "icon", "label": "Icon Image" },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Icon Size (Desktop)",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "icon_size_mobile",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Icon Size (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "text",
+      "id": "discount_amount",
+      "label": "Discount Threshold",
+      "default": "50.00",
+      "info": "Enter the amount in money format (e.g., 50.00)"
+    },
     { "type": "header", "content": "General" },
     { "type": "header", "content": "Text" },
-    { "type": "range", "id": "font_size", "min": 10, "max": 40, "step": 1, "unit": "px", "label": "Font Size", "default": 18 },
-    { "type": "select", "id": "font_weight", "label": "Font Weight", "options": [
-      { "value": "400", "label": "Normal" },
-      { "value": "700", "label": "Bold" }
-    ], "default": "400" },
+    {
+      "type": "range",
+      "id": "font_size_desktop",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Font Size (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "font_size_mobile",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Font Size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font Weight",
+      "options": [
+        { "value": "100", "label": "100 - Thin" },
+        { "value": "200", "label": "200 - Extra Light" },
+        { "value": "300", "label": "300 - Light" },
+        { "value": "400", "label": "400 - Normal" },
+        { "value": "500", "label": "500 - Medium" },
+        { "value": "600", "label": "600 - Semi Bold" },
+        { "value": "700", "label": "700 - Bold" },
+        { "value": "800", "label": "800 - Extra Bold" },
+        { "value": "900", "label": "900 - Boldest" }
+      ],
+      "default": "400"
+    },
     { "type": "header", "content": "Color" },
-    { "type": "color", "id": "icon_color", "label": "Icon Color", "default": "#0F2918" },
     { "type": "color", "id": "color", "label": "Color", "default": "#0F2918" },
     { "type": "header", "content": "Spacings" },
-    { "type": "range", "id": "margin_top_desktop", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Desktop)", "default": 40 },
-    { "type": "range", "id": "margin_top_mobile", "min": 0, "max": 50, "step": 1, "unit": "px", "label": "Margin Top (Mobile)", "default": 20 }
+    {
+      "type": "range",
+      "id": "margin_top_desktop",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top (Desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top (Mobile)",
+      "default": 12
+    },
+    { "type": "header", "content": "Layout" },
+    {
+      "type": "range",
+      "id": "max_width_desktop",
+      "min": 200,
+      "max": 1200,
+      "step": 10,
+      "unit": "px",
+      "label": "Max-width (desktop)",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "max_width_mobile",
+      "min": 200,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "label": "Max-width (mobile)",
+      "default": 800
+    },
+    {
+      "type": "number",
+      "id": "styles_breakpoint",
+      "label": "Styles Breakpoint",
+      "default": 1200,
+      "info": "Defines the max-width for changes"
+    }
   ],
-  "presets": [
-    { "name": "Label & Icon (Discount)" }
-  ]
+  "presets": [{ "name": "Label & Icon (Discount)" }]
 }
 {% endschema %}
