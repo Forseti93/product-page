@@ -57,13 +57,13 @@
               "name": "Label - text & background",
               "settings": {
                 "text": "NEW",
-                "text_color": "#0F2918",
-                "bg_color": "#F7FAF3",
+                "text_color": "#0f2918",
+                "bg_color": "#f7faf3",
                 "border_radius": 99,
                 "margin_top_desktop": 0,
                 "margin_top_mobile": 0,
                 "visible_on_mobile": false,
-                "visibility_breakpoint": 1200
+                "styles_breakpoint": 1200
               },
               "blocks": {}
             },
@@ -73,13 +73,13 @@
               "disabled": true,
               "settings": {
                 "text": "EXAMPLE",
-                "text_color": "#0F2918",
-                "bg_color": "#F7FAF3",
+                "text_color": "#040c06",
+                "bg_color": "#e3fbbe",
                 "border_radius": 99,
                 "margin_top_desktop": 0,
                 "margin_top_mobile": 0,
                 "visible_on_mobile": false,
-                "visibility_breakpoint": 1200
+                "styles_breakpoint": 1200
               },
               "blocks": {}
             }
@@ -95,35 +95,48 @@
             "font_size_desktop": 48,
             "font_size_mobile": 32,
             "font_weight": "700",
+            "heading_tag": "h1",
             "color": "#0f2918",
             "margin_top_desktop": 16,
-            "margin_top_mobile": 12
+            "margin_top_mobile": 12,
+            "max_width_desktop": 1200,
+            "max_width_mobile": 800,
+            "breakpoint": 767
           },
           "blocks": {}
         },
         "description": {
           "type": "mptt-description",
           "settings": {
+            "text": "<p>Add your product description or custom text here.</p>",
             "font_size_desktop": 20,
             "font_size_mobile": 16,
             "font_weight": "400",
             "color": "#0f2918cc",
             "margin_top_desktop": 16,
-            "margin_top_mobile": 12
+            "margin_top_mobile": 12,
+            "max_width_desktop": 1200,
+            "max_width_mobile": 800,
+            "styles_breakpoint": 1200
           },
           "blocks": {}
         },
         "price": {
           "type": "mptt-price-discount",
           "settings": {
-            "icon": "truck",
-            "discount_amount": 5000,
-            "font_size": 18,
+            "icon": "shopify://shop_images/delivery.svg",
+            "icon_size": 24,
+            "icon_size_mobile": 24,
+            "discount_amount": "{{ closest.product.metafields.custom.free_shipping_threshold.value }}",
+            "font_size_desktop": 18,
+            "font_size_mobile": 16,
             "font_weight": "400",
-            "icon_color": "#0f2918",
             "color": "#0f2918",
             "margin_top_desktop": 40,
-            "margin_top_mobile": 20
+            "margin_top_mobile": 20,
+            "max_width_desktop": 1200,
+            "max_width_mobile": 800,
+            "styles_breakpoint": 1200
           },
           "blocks": {}
         },
