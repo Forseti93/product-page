@@ -12,17 +12,17 @@
     "main": {
       "type": "main-product-test-task",
       "blocks": {
-        "label": {
-          "type": "mptt-label-mobile-image",
+        "mptt_label_Mizgjj": {
+          "type": "mptt-label",
+          "name": "Label (NEW)",
           "settings": {
             "text": "NEW",
-            "text_color": "#0f2918",
-            "bg_color": "#f7faf3",
-            "border_radius": 100,
+            "text_color": "#0F2918",
+            "bg_color": "#F7FAF3",
+            "border_radius": 99,
             "margin_top_desktop": 0,
             "margin_top_mobile": 0,
             "visible_on_mobile": false,
-            "visible_on_desktop": true,
             "visibility_breakpoint": 1200
           },
           "blocks": {}
@@ -110,7 +110,7 @@
         }
       },
       "block_order": [
-        "label",
+        "mptt_label_Mizgjj",
         "title",
         "description",
         "price",
