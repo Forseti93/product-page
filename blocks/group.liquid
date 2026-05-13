@@ -1,10 +1,59 @@
-
-
 {%- capture children %}
   {% content_for 'blocks' %}
 {% endcapture %}
 
 {% render 'group', children: children, settings: block.settings, shopify_attributes: block.shopify_attributes %}
+
+{%- if block.settings.absolute_mobile_id != blank -%}
+  {%- style -%}
+    @media screen and (max-width: {{ block.settings.breakpoint }}px) {
+      #shopify-block-{{ block.id }},
+      #{{ block.id }} {
+        position: absolute !important;
+        top: {{ block.settings.absolute_mobile_top }}px !important;
+        left: {{ block.settings.absolute_mobile_left }}px !important;
+        z-index: 100;
+        margin: 0 !important;
+      }
+    }
+  {%- endstyle -%}
+
+  <script>
+    (function() {
+      const blockId = '{{ block.id }}';
+      const element = document.getElementById(blockId) || document.getElementById('shopify-block-' + blockId) || document.querySelector('[data-shopify-editor-block*="' + blockId + '"]');
+
+      if (!element) return;
+
+      const initialParent = element.parentElement;
+      const initialNextSibling = element.nextSibling;
+
+      const targetId = '{{ block.settings.absolute_mobile_id }}';
+      const breakpoint = {{ block.settings.breakpoint }};
+
+      const teleport = () => {
+        const target = document.getElementById(targetId);
+        const isMobile = window.innerWidth <= breakpoint;
+
+        if (isMobile) {
+          if (target && !target.contains(element)) {
+            target.appendChild(element);
+          }
+        } else {
+          if (element.parentElement !== initialParent) {
+            initialParent.insertBefore(element, initialNextSibling);
+          }
+        }
+      };
+
+      window.addEventListener('resize', teleport);
+      document.addEventListener('shopify:section:load', teleport);
+      document.addEventListener('DOMContentLoaded', teleport);
+
+      teleport();
+    })();
+  </script>
+{%- endif -%}
 
 {% schema %}
 {
@@ -157,6 +206,34 @@
       "step": 1,
       "unit": "px",
       "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Mobile Absolute Position"
+    },
+    {
+      "type": "text",
+      "id": "absolute_mobile_id",
+      "label": "Position absolute on mobile to id:",
+      "info": "Paste the ID of the element where this block should be moved and positioned absolutely."
+    },
+    {
+      "type": "number",
+      "id": "absolute_mobile_top",
+      "label": "Top Position (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "absolute_mobile_left",
+      "label": "Left Position (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "breakpoint",
+      "label": "Mobile Breakpoint (px)",
+      "default": 1000
     },
     {
       "type": "header",

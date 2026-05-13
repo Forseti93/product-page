@@ -1,0 +1,90 @@
+{%- style -%}
+  #shopify-block-{{ block.id }} {
+    display: inline-block;
+    width: fit-content;
+    margin-top: {{ block.settings.margin_top_desktop }}px;
+
+    @media screen and (max-width: {{ block.settings.styles_breakpoint }}px) {
+      & {
+        margin-top: {{ block.settings.margin_top_mobile }}px;
+      }
+    }
+
+    @media screen and (max-width: {{ block.settings.styles_breakpoint }}px) {
+      & {
+        display: {%- if block.settings.visible_on_mobile -%}block{%- else -%}none{%- endif -%};
+      }
+    }
+  }
+{%- endstyle -%}
+
+{%- if block.settings.text != blank -%}
+  <span
+    class="mptt-label"
+    role="status"
+    {{ block.shopify_attributes }}
+    style="
+      color: {{ block.settings.text_color }};
+      background-color: {{ block.settings.bg_color }};
+      border-radius: {{ block.settings.border_radius }}px;
+    "
+  >
+    <span class="visually-hidden">Badge: </span>
+    {{ block.settings.text }}
+  </span>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Label (NEW)",
+  "settings": [
+    { "type": "header", "content": "Content" },
+    { "type": "text", "id": "text", "label": "Text", "default": "NEW" },
+    { "type": "header", "content": "General" },
+    { "type": "header", "content": "Color" },
+    { "type": "color", "id": "text_color", "label": "Text Color", "default": "#0F2918" },
+    { "type": "color", "id": "bg_color", "label": "Background Color", "default": "#F7FAF3" },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Border Radius",
+      "default": 99
+    },
+    { "type": "header", "content": "Spacings" },
+    {
+      "type": "range",
+      "id": "margin_top_desktop",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top (Desktop)",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top (Mobile)",
+      "default": 0
+    },
+    { "type": "header", "content": "Visibility" },
+    { "type": "checkbox", "id": "visible_on_mobile", "label": "Visible on Mobile", "default": false },
+    {
+      "type": "number",
+      "id": "styles_breakpoint",
+      "label": "Styles Breakpoint",
+      "default": 1200,
+      "info": "Defines the max-width for changes"
+    }
+  ],
+  "presets": [{ "name": "Label - text & background" }]
+}
+{% endschema %}

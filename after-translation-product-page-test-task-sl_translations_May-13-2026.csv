@@ -1,0 +1,844 @@
+Type,Identification,Field,Locale,Market,Status,Default content,Translated content
+COLLECTION,500762902775,title,uk,,,Home page,Головна сторінка
+COLLECTION,500762902775,handle,uk,,,frontpage,домашня сторінка
+COOKIE_BANNER,9701556471,policy_link_text,uk,,,Privacy Policy,Політика конфіденційності
+COOKIE_BANNER,9701556471,title,uk,,,Cookie consent,Згода на використання файлів cookie
+COOKIE_BANNER,9701556471,text,uk,,,"We and our partners, including Shopify, use cookies and other technologies to personalize your experience, show you ads, and perform analytics, and we will not use cookies or other technologies for these purposes unless you accept them. Learn more in our ","Ми та наші партнери, включаючи Shopify, використовуємо файли cookie та інші технології, щоб персоналізувати ваш досвід, показувати вам рекламу та проводити аналітику, і ми не використовуватимемо файли cookie чи інші технології для цих цілей, якщо ви їх не приймете. Дізнайтеся більше в нашому"
+COOKIE_BANNER,9701556471,button_prefs_open_text,uk,,,Manage preferences,Керувати налаштуваннями
+COOKIE_BANNER,9701556471,button_accept_text,uk,,,Accept,Прийняти
+COOKIE_BANNER,9701556471,button_decline_text,uk,,,Decline,Відхилити
+COOKIE_BANNER,9701556471,preferences_title,uk,,,Cookie and privacy preferences,Налаштування файлів cookie та конфіденційності
+COOKIE_BANNER,9701556471,preferences_intro_title,uk,,,You control your data,Ви контролюєте свої дані
+COOKIE_BANNER,9701556471,preferences_intro_text,uk,,,"Learn more about the cookies we use, and choose which cookies to allow.","Дізнайтеся більше про файли cookie, які ми використовуємо, і виберіть, які файли cookie дозволити."
+COOKIE_BANNER,9701556471,preferences_button_accept_text,uk,,,Accept all,Прийняти всі
+COOKIE_BANNER,9701556471,preferences_button_decline_text,uk,,,Decline all,Відхилити всі
+COOKIE_BANNER,9701556471,preferences_button_save_text,uk,,,Save my choices,Зберегти мій вибір
+COOKIE_BANNER,9701556471,preferences_bullet_points_title,uk,,,If you accept all cookies,Якщо ви приймете всі файли cookie
+COOKIE_BANNER,9701556471,preferences_bullet_points_first_text,uk,,,Our site may be improved based on your interests,Наш сайт може покращуватися на основі ваших інтересів
+COOKIE_BANNER,9701556471,preferences_bullet_points_second_text,uk,,,Your preferences may be stored for when you return,Ваші налаштування можуть бути збережені для наступного відвідування
+COOKIE_BANNER,9701556471,preferences_bullet_points_third_text,uk,,,You may see advertising that's tailored to you,"Ви можете бачити рекламу, підібрану для вас"
+COOKIE_BANNER,9701556471,preferences_purposes_essential_name,uk,,,Required,Обов’язково
+COOKIE_BANNER,9701556471,preferences_purposes_essential_desc,uk,,,"These cookies are necessary for the site to function properly, including capabilities like logging in and adding items to the cart.","Ці файли cookie необхідні для належного функціонування сайту, включаючи такі можливості, як вхід у систему та додавання товарів у кошик."
+COOKIE_BANNER,9701556471,preferences_purposes_performance_name,uk,,,Analytics,Аналітика
+COOKIE_BANNER,9701556471,preferences_purposes_performance_desc,uk,,,These cookies help us understand how you interact with the site. We use this data to identify areas to improve.,"Ці файли cookie допомагають нам зрозуміти, як ви взаємодієте із сайтом. Ми використовуємо ці дані для визначення областей, які потребують покращення."
+COOKIE_BANNER,9701556471,preferences_purposes_preferences_name,uk,,,Personalization,Персоналізація
+COOKIE_BANNER,9701556471,preferences_purposes_preferences_desc,uk,,,These cookies store details about your actions to personalize your next visit to the website.,"Ці файли cookie зберігають інформацію про ваші дії, щоб персоналізувати ваш наступний візит на веб-сайт."
+COOKIE_BANNER,9701556471,preferences_purposes_marketing_name,uk,,,Marketing,Маркетинг
+COOKIE_BANNER,9701556471,preferences_purposes_marketing_desc,uk,,,"These cookies are used by us and our partners, including Shopify, to optimize marketing communications and show you ads on other websites.","Ці файли cookie використовуються нами та нашими партнерами, зокрема Shopify, для оптимізації маркетингових комунікацій і показу реклами на інших вебсайтах."
+COOKIE_BANNER,9701556471,policy_link_url,uk,,,https://product-page-test-task-sl.myshopify.com/policies/privacy-policy,https://product-page-test-task-sl.myshopify.com/policies/privacy-policy
+DELIVERY_METHOD_DEFINITION,1026081849591,name,uk,,,Standard,Стандартний
+DELIVERY_METHOD_DEFINITION,1026081882359,name,uk,,,Express,Експрес
+FILTER,108257509623,label,uk,,,Availability,Наявність
+FILTER,108257542391,label,uk,,,Price,Ціна
+LINK,683891327223,title,uk,,,Home,Головна сторінка
+LINK,683891359991,title,uk,,,Catalog,Каталог
+LINK,683891392759,title,uk,,,Contact,Контакти
+LINK,683891425527,title,uk,,,Search,Пошук
+LINK,683891458295,title,uk,,,Orders,Замовлення
+LINK,683891491063,title,uk,,,Profile,Профіль
+LINK,683891523831,title,uk,,,Your Privacy Choices,Ваші налаштування конфіденційності
+MEDIA_IMAGE,54878511137015,alt,uk,,,,
+MEDIA_IMAGE,54878511169783,alt,uk,,,,
+MEDIA_IMAGE,54878511333623,alt,uk,,,,
+MEDIA_IMAGE,54878511661303,alt,uk,,,,
+MEDIA_IMAGE,54878511726839,alt,uk,,,,
+MEDIA_IMAGE,54878512218359,alt,uk,,,,
+MEDIA_IMAGE,54878512251127,alt,uk,,,,
+MEDIA_IMAGE,54878512283895,alt,uk,,,,
+MEDIA_IMAGE,54878512513271,alt,uk,,,,
+MEDIA_IMAGE,54878512742647,alt,uk,,,,
+MEDIA_IMAGE,54878512775415,alt,uk,,,,
+MEDIA_IMAGE,54878512939255,alt,uk,,,,
+MEDIA_IMAGE,54878513168631,alt,uk,,,,
+MEDIA_IMAGE,54878513529079,alt,uk,,,,
+MEDIA_IMAGE,54878513791223,alt,uk,,,,
+MEDIA_IMAGE,54878513987831,alt,uk,,,,
+MEDIA_IMAGE,54878514282743,alt,uk,,,,
+MEDIA_IMAGE,54878514315511,alt,uk,,,,
+MEDIA_IMAGE,54878514610423,alt,uk,,,,
+MEDIA_IMAGE,54878514970871,alt,uk,,,,
+MEDIA_IMAGE,54878515134711,alt,uk,,,,
+MEDIA_IMAGE,54881608466679,alt,uk,,,,
+MEDIA_IMAGE,54894734278903,alt,uk,,,,
+MEDIA_IMAGE,54894734311671,alt,uk,,,,
+MEDIA_IMAGE,54894734344439,alt,uk,,,,
+MEDIA_IMAGE,54894734377207,alt,uk,,,,
+MEDIA_IMAGE,54894734409975,alt,uk,,,,
+BLOG,116436795639,title,uk,,,News,Новини
+BLOG,116436795639,handle,uk,,,news,Новини
+MENU,282542833911,title,uk,,,Main menu,Головне меню
+MENU,282542866679,title,uk,,,Footer menu,Меню футера
+MENU,282542899447,title,uk,,,Customer account main menu,Головне меню облікового запису клієнта
+PAGE,150040969463,title,uk,,,Contact,Контакти
+PAGE,150040969463,handle,uk,,,contact,контакт
+PAGE,150041002231,title,uk,,,Your Privacy Choices,Ваш вибір конфіденційності
+PAGE,150041002231,body_html,uk,,,"<link rel=""stylesheet"" type=""text/css"" href=""https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css"">
+<meta charset=""utf-8""> <p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p> <p>Sharing of personal information for targeted advertising based on your interaction on different websites may be considered ""sales"", ""sharing"", or ""targeted advertising"" under certain U.S. state privacy laws. Depending on where you live, you may have the right to opt out of these activities. If you would like to exercise this opt-out right, please follow the instructions below.</p> <p>If you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will treat this as a request to opt-out of activity that may be considered a “sale” or “sharing” of personal information or other uses that may be considered targeted advertising for the device and browser you used to visit our website.</p>
+<div id=""pc--optOutFormContainer"" data-not-applicable='To opt out of the ""sale"" or ""sharing"" of your personal information collected using cookies and other device-based identifiers as described above, you must be browsing from one of the applicable US states referred to above.' data-description='If you would like to opt out of activity that may be considered a ""sale"" or ""share,"" or ""targeted advertising"", please submit your email.' data-email-label='Email' data-success='Opted-out successfully' data-error='A problem occurred, try submitting your email again' data-form-description='By clicking “opt out“, the browser on this device will be opted out of sharing personal data. If you select the checkbox and enter an email, the related customer account will also be opted out.' data-form-email-label='Email' data-form-opt-out-account-label=""Don't share data from my account (optional)"" data-form-button-text='Opt out' data-form-opted-out='The browser on this device is opted out' data-form-success='You have successfully opted out' data-form-error='A problem occurred, please try again' ></div>
+<script src=""https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.js"" defer></script> <script src=""https://js.hcaptcha.com/1/api.js?onload=optOutOnLoad"" defer></script>","<link rel=""stylesheet"" type=""text/css"" href=""https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css""> <meta charset=""utf-8""> <p>Як описано в нашій Політиці конфіденційності, ми збираємо особисту інформацію під час вашої взаємодії з нами та нашим вебсайтом, зокрема за допомогою файлів cookie та подібних технологій. Ми також можемо передавати цю особисту інформацію третім особам, зокрема рекламним партнерам. Ми робимо це для того, щоб показувати вам на інших вебсайтах рекламу, яка більше відповідає вашим інтересам, а також з інших причин, викладених у нашій політиці конфіденційності.</p> <p>Передача особистої інформації для цільової реклами на основі вашої взаємодії на різних вебсайтах може вважатися «продажем», «поширенням» або «цільовою рекламою» згідно з певними законами штатів США про конфіденційність. Залежно від того, де ви проживаєте, ви можете мати право відмовитися від цих дій. Якщо ви хочете скористатися цим правом на відмову, дотримуйтеся наведених нижче інструкцій.</p> <p>Якщо ви відвідуєте наш вебсайт із увімкненим сигналом переваги відмови Global Privacy Control, залежно від того, де ви перебуваєте, ми розглядатимемо це як запит на відмову від діяльності, яка може вважатися «продажем» або «поширенням» особистої інформації, або від інших видів використання, які можуть вважатися цільовою рекламою для пристрою та браузера, які ви використовували для відвідування нашого вебсайту.</p> <div id=""pc--optOutFormContainer"" data-not-applicable='Щоб відмовитися від «продажу» або «поширення» вашої особистої інформації, зібраної за допомогою файлів cookie та інших ідентифікаторів пристроїв, як описано вище, ви повинні перебувати в одному з відповідних штатів США, згаданих вище.' data-description='Якщо ви хочете відмовитися від діяльності, яка може вважатися «продажем», «поширенням» або «цільовою рекламою», вкажіть свою електронну адресу.' data-email-label='Електронна пошта' data-success='Відмова пройшла успішно' data-error='Виникла проблема, спробуйте вказати електронну адресу ще раз' data-form-description='Натиснувши «відмовитися», ви відмовитеся від передачі особистих даних у браузері на цьому пристрої. Якщо ви встановите прапорець і введете адресу електронної пошти, ви також відмовитеся від передачі даних пов’язаного облікового запису клієнта.' data-form-email-label='Електронна пошта' data-form-opt-out-account-label=""Не передавати дані з мого облікового запису (необов’язково)"" data-form-button-text='Відмовитися' data-form-opted-out='Браузер на цьому пристрої налаштовано на відмову' data-form-success='Ви успішно відмовилися' data-form-error='Виникла проблема, спробуйте ще раз' ></div> <script src=""https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.js"" defer></script> <script src=""https://js.hcaptcha.com/1/api.js?onload=optOutOnLoad"" defer></script>"
+PAGE,150041002231,handle,uk,,,data-sharing-opt-out,відмова від поширення даних
+ONLINE_STORE_THEME,177604329719,section.404.json.main.text_GqmVFf.text:2i368gao346xo,uk,,,<h1>Page not found</h1>,<h1>Сторінку не знайдено</h1>
+ONLINE_STORE_THEME,177604329719,section.404.json.main.text_Ua9XAW.text:10io0lm5gwd3m,uk,,,"<p>The link may be incorrect, or the page has been removed. </p>","<p>Посилання може бути невірним, або сторінку було видалено.</p>"
+ONLINE_STORE_THEME,177604329719,section.404.json.main.button_PAQMwR.label:30ry970vkw0bt,uk,,,Continue shopping,Продовжити покупки
+ONLINE_STORE_THEME,177604329719,section.404.json.main.button_PAQMwR.link:ss0bdhvde5fz,uk,,,shopify://collections/all,shopify://collections/all
+ONLINE_STORE_THEME,177604329719,section.404.json.product_list_iA96Tq.static-header__text_WJEa9Q.text:3gwqztskn9i3u,uk,,,<p>Discover something new</p>,<p>Відкрийте для себе щось нове</p>
+ONLINE_STORE_THEME,177604329719,section.article.json.section.blog-post-title.text:2qmlk8swrysm3,uk,,,<h1>{{ article.title }}</h1>,<h1>{{ article.title }}</h1>
+ONLINE_STORE_THEME,177604329719,section.blog.json.main.title.text:3mkg0fvh31gw5,uk,,,<h1>{{ closest.blog.title }}</h1>,<h1>{{ closest.blog.title }}</h1>
+ONLINE_STORE_THEME,177604329719,section.cart.json.cart-section.cart-page-title.title:ffson5e94pnq,uk,,,Cart,Кошик
+ONLINE_STORE_THEME,177604329719,section.cart.json.product_list_NNFgcy.static-header__product_list_text_fifeh4.text:27h7qdg4ek6cv,uk,,,<h3>You may also like</h3>,<h3>Вам також може сподобатися</h3>
+ONLINE_STORE_THEME,177604329719,section.cart.json.product_list_NNFgcy.static-header__product_list_button_eibbma.label:2bkjyggphdm8f,uk,,,View all,Переглянути все
+ONLINE_STORE_THEME,177604329719,section.collection.json.section.text_tqQTNE.text:1vmb3k4ct6g4e,uk,,,<h1>{{ closest.collection.title }}</h1>,<h1>{{ closest.collection.title }}</h1>
+ONLINE_STORE_THEME,177604329719,section.collection.json.section.text_twGGkJ.text:b8a2nm6fwj13,uk,,,{{ closest.collection.description }},{{ closest.collection.description }}
+ONLINE_STORE_THEME,177604329719,section.index.json.hero_jVaWmY.text_YLPk4p.text:3mfw1qkd1m4y7,uk,,,<p>Browse our latest products</p>,<p>Перегляньте наші останні товари</p>
+ONLINE_STORE_THEME,177604329719,section.index.json.hero_jVaWmY.button_H9gpTf.label:22syxefjpeqwx,uk,,,Shop all,Переглянути все
+ONLINE_STORE_THEME,177604329719,section.index.json.hero_jVaWmY.button_H9gpTf.link:108q9zlq8f36v,uk,,,shopify://collections/all,shopify://collections/all
+ONLINE_STORE_THEME,177604329719,section.index.json.product_list_fa6P9H.static-header__product_list_text_YFtzcL.text:3swl12a07tofk,uk,,,<h3>{{ closest.collection.title }}</h3>,<h3>{{ closest.collection.title }}</h3>
+ONLINE_STORE_THEME,177604329719,section.index.json.product_list_fa6P9H.static-header__product_list_button_MWeP9V.label:11xltcn0p7x4u,uk,,,View all,Переглянути все
+ONLINE_STORE_THEME,177604329719,section.list-collections.json.collection_list_Wfgh3m.group_4FtiAg__text_fRMQMR.text:1vvq2zaj6zyve,uk,,,<h1>Collections</h1>,<h1>Колекції</h1>
+ONLINE_STORE_THEME,177604329719,section.page.contact.json.main.title.text:1g0er5b0k3roe,uk,,,<h1>{{ closest.page.title }}</h1>,<h1>{{ closest.page.title }}</h1>
+ONLINE_STORE_THEME,177604329719,section.page.contact.json.main.content.text:69a0qmhvsct3,uk,,,{{ closest.page.content }},{{ closest.page.content }}
+ONLINE_STORE_THEME,177604329719,section.page.contact.json.form.contact_form_UwiCkQ__submit-button.label:1691dx6kcaglv,uk,,,Submit,Надіслати
+ONLINE_STORE_THEME,177604329719,section.page.json.main.heading.text:53ake9i3ihjs,uk,,,<h1>{{ closest.page.title }}</h1>,<h1>{{ closest.page.title }}</h1>
+ONLINE_STORE_THEME,177604329719,section.password.json.main.text.text:24k3p54lm9141,uk,,,<h1>Opening soon</h1>,<h1>Скоро відкриття</h1>
+ONLINE_STORE_THEME,177604329719,section.password.json.main.text-2.text:2z5rzsvzqixb2,uk,,,<p>Sign up for our newsletter to be the first to know when we launch.</p>,"<p>Підпишіться на нашу розсилку, щоб першими дізнатися про наш запуск.</p>"
+ONLINE_STORE_THEME,177604329719,section.password.json.main.email-signup.label:2frgv6ufbt1g0,uk,,,Sign up,Зареєструватися
+ONLINE_STORE_THEME,177604329719,section.product.json.main.product-details__group_icgrde__text_xrnftG.text:3i8e8otiq02ld,uk,,,<h1>{{ closest.product.title }}</h1>,<h1>{{ closest.product.title }}</h1>
+ONLINE_STORE_THEME,177604329719,section.product.json.main.product-details__text_aEtTtq.text:vzk5prms675b,uk,,,{{ closest.product.description }},{{ closest.product.description }}
+ONLINE_STORE_THEME,177604329719,section.product.json.product_recommendations_qggXJq.text_cbcgyb.text:26lmab1lb8sv0,uk,,,<h3>You may also like </h3>,<h3>Вам також може сподобатися </h3>
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.group_wKawTx.absolute_mobile_id:29urp6epznark,uk,,,mptt-media-col,mptt-медіа-стовпець
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.group_wKawTx__mptt_label_hVrTVT.text:3gpczf9r8b6bq,uk,,,NEW,НОВИНКА
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.group_wKawTx__mptt_label_3zQNHi.text:3mpq3ank94aaz,uk,,,EXAMPLE,ПРИКЛАД
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.description.text:3ath273htam9z,uk,,,<p>Add your product description or custom text here.</p>,<p>Додайте опис вашого товару або інший власний текст тут.</p>
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.price.icon:30x94vhd5xyy,uk,,,shopify://shop_images/delivery.svg,shopify://shop_images/delivery.svg
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.price.discount_amount:27xqexohu3bxb,uk,,,{{ closest.product.metafields.custom.free_shipping_threshold.value }},{{ closest.product.metafields.custom.free_shipping_threshold.value }}
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.buy_now.text:32v0pl3xvav7q,uk,,,Buy Now -,Купити зараз -
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.buy_now.icon:32v0pl3zm1aq8,uk,,,shopify://shop_images/arrow_right.svg,shopify://shop_images/arrow_right.svg
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.features.icon_1:3q5bop6octo72,uk,,,shopify://shop_images/energy_in_circle.svg,shopify://shop_images/energy_in_circle.svg
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.features.text_1:3q5borxuhnsbs,uk,,,Supports daily energy,Підтримує щоденну енергію
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.features.icon_2:3q5bop6octnb1,uk,,,shopify://shop_images/plant.svg,shopify://shop_images/plant.svg
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.features.text_2:3q5borxuhnoa3,uk,,,Plant-based formula,Формула на рослинній основі
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.features.icon_3:3q5bop6octprw,uk,,,shopify://shop_images/no_sugar.svg,shopify://shop_images/no_sugar.svg
+ONLINE_STORE_THEME,177604329719,section.product.minimalistic.json.main.features.text_3:3q5borxuhnqqy,uk,,,No added sugar,Без додавання цукру
+ONLINE_STORE_THEME,177604329719,section.sections/footer-group.json.footer_m9NzUG.group_H6VpwJ__text_LWt8Pz.text:11a6kwfibxsn8,uk,,,<h2>Join our email list</h2>,<h2>Підпишіться на нашу розсилку</h2>
+ONLINE_STORE_THEME,177604329719,section.sections/footer-group.json.footer_m9NzUG.group_H6VpwJ__text_f9CFLH.text:ne10ekm1b2pz,uk,,,<p>Get exclusive deals and early access to new products.</p>,<p>Отримуйте ексклюзивні пропозиції та ранній доступ до нових товарів.</p>
+ONLINE_STORE_THEME,177604329719,section.sections/footer-group.json.footer_m9NzUG.email_signup_crihX7.label:r7nsgb9ylyzk,uk,,,Sign up,Зареєструватися
+ONLINE_STORE_THEME,177604329719,section.sections/footer-group.json.footer_utilities_jLGE8U.social_links_Ew63Kq.facebook_url:mb9k3oghtwqg,uk,,,https://www.facebook.com/,https://www.facebook.com/
+ONLINE_STORE_THEME,177604329719,section.sections/footer-group.json.footer_utilities_jLGE8U.social_links_Ew63Kq.instagram_url:3m6tnkaonfzxk,uk,,,https://www.instagram.com/,https://www.instagram.com/
+ONLINE_STORE_THEME,177604329719,section.sections/footer-group.json.footer_utilities_jLGE8U.social_links_Ew63Kq.youtube_url:87mto2fefvx1,uk,,,https://www.youtube.com/,https://www.youtube.com/
+ONLINE_STORE_THEME,177604329719,section.sections/footer-group.json.footer_utilities_jLGE8U.social_links_Ew63Kq.tiktok_url:3jf8oti9ofhiu,uk,,,https://www.tiktok.com/,https://www.tiktok.com/
+ONLINE_STORE_THEME,177604329719,section.sections/footer-group.json.footer_utilities_jLGE8U.social_links_Ew63Kq.twitter_url:8nzeol02h31p,uk,,,https://x.com/,https://x.com/
+ONLINE_STORE_THEME,177604329719,section.sections/header-group.json.header_announcements_9jGBFp.announcement_BxgCk9.text:pmxvxwkljjsj,uk,,,Welcome to our store,Ласкаво просимо до нашого магазину
+PACKING_SLIP_TEMPLATE,4683596023,body,uk,,,"<div class=""wrapper"">
+  <div class=""header"">
+    <div class=""shop-title"">
+      <p class=""to-uppercase"">
+        {{ shop.name }}
+      </p>
+    </div>
+    <div class=""order-title"">
+      <p class=""text-align-right"">
+        Order {{ order.name }}
+      </p>
+      {% if order.po_number != blank %}
+        <p class=""text-align-right"">
+          PO number #{{ order.po_number }}
+        </p>
+      {% endif %}
+      <p class=""text-align-right"">
+        {{ order.created_at | date: format: ""date"" }}
+      </p>
+    </div>
+  </div>
+  <div class=""customer-addresses"">
+    <div class=""shipping-address"">
+      <p class=""subtitle-bold to-uppercase"">
+        {% if delivery_method.instructions != blank %}
+          Delivery to
+        {% else %}
+          Ship to
+        {% endif %}
+      </p>
+      <p class=""address-detail"">
+        {% if shipping_address != blank %}
+          {{ shipping_address.name }}
+          {% if shipping_address.company != blank %}
+            <br>
+            {{ shipping_address.company }}
+          {% endif %}
+          <br>
+          {{ shipping_address.address1 }}
+          {% if shipping_address.address2 != blank %}
+            <br>
+            {{ shipping_address.address2 }}
+          {% endif %}
+          {% if shipping_address.city_province_zip != blank %}
+            <br>
+            {{ shipping_address.city_province_zip }}
+          {% endif %}
+          <br>
+          {{ shipping_address.country }}
+          {% if shipping_address.phone != blank %}
+            <br>
+            {{ shipping_address.phone }}
+          {% endif %}
+        {% else %}
+          No shipping address
+        {% endif %}
+      </p>
+    </div>
+    <div class=""billing-address"">
+      <p class=""subtitle-bold to-uppercase"">
+        Bill to
+      </p>
+      <p class=""address-detail"">
+        {% if billing_address != blank %}
+          {{ billing_address.name }}
+          {% if billing_address.company != blank %}
+            <br>
+            {{ billing_address.company }}
+          {% endif %}
+          <br>
+          {{ billing_address.address1 }}
+          {%  if billing_address.address2 != blank %}
+            <br>
+            {{ billing_address.address2 }}
+          {% endif %}
+          {% if billing_address.city_province_zip != blank %}
+            <br>
+            {{ billing_address.city_province_zip }}
+          {% endif %}
+          <br>
+          {{ billing_address.country }}
+        {% else %}
+          No billing address
+        {% endif %}
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class=""order-container"">
+    <div class=""order-container-header"">
+      <div class=""order-container-header-left-content"">
+        <p class=""subtitle-bold to-uppercase"">
+          Items
+        </p>
+      </div>
+      <div class=""order-container-header-right-content"">
+        <p class=""subtitle-bold to-uppercase"">
+          Quantity
+        </p>
+      </div>
+    </div>
+
+    {% comment %}
+    To adjust the size of line item images, change desired_image_size.
+    The other variables make sure your images print at high quality.
+    {% endcomment %}
+    {% assign desired_image_size = 58 %}
+    {% assign resolution_adjusted_size = desired_image_size | times: 300 | divided_by: 72 | ceil %}
+    {% capture effective_image_dimensions %}
+      {{ resolution_adjusted_size }}x{{ resolution_adjusted_size }}
+    {% endcapture %}
+
+    {% for line_item in line_items_in_shipment %}
+      <div class=""flex-line-item"">
+        <div class=""flex-line-item-img"">
+          {% if line_item.image != blank %}
+            <div class=""aspect-ratio aspect-ratio-square"" style=""width: {{ desired_image_size }}px; height: {{ desired_image_size }}px;"">
+              {{ line_item.image | img_url: effective_image_dimensions | img_tag: '', 'aspect-ratio__content' }}
+            </div>
+          {% endif %}
+        </div>
+        <div class=""flex-line-item-description"">
+          <p>
+            <span class=""line-item-description-line"">
+              {{ line_item.title }}
+            </span>
+            {% if line_item.variant_title != blank %}
+              <span class=""line-item-description-line"">
+                {{ line_item.variant_title }}
+              </span>
+            {% endif %}
+            {% if line_item.sku != blank %}
+              <span class=""line-item-description-line"">
+                {{ line_item.sku }}
+              </span>
+            {% endif %}
+            {% for group in line_item.groups %}
+              {% if group.deliverable? %}
+                <span class=""line-item-description-line"">
+                  For: {{ group.title }}
+                </span>
+              {% else %}
+                <span class=""line-item-description-line"">
+                  Part of: {{ group.title }}
+                </span>
+              {% endif %}
+            {% endfor %}
+          </p>
+        </div>
+        <div class=""flex-line-item-quantity"">
+          <p class=""text-align-right"">
+            {{ line_item.shipping_quantity }} of {{ line_item.quantity }}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% unless includes_all_line_items_in_order %}
+    <hr class=""subdued-separator"">
+    <p class=""missing-line-items-text "">
+      There are other items from your order not included in this shipment.
+    </p>
+  {% endunless %}
+  <hr>
+  {% if order.note != blank %}
+    <div class=""notes"">
+      <p class=""subtitle-bold to-uppercase"">
+        Notes
+      </p>
+      <p class=""notes-details"">
+        {{ order.note }}
+      </p>
+    </div>
+  {% endif %}
+  {% if delivery_method.instructions != blank %}
+    <div class=""notes"">
+      <p class=""subtitle-bold to-uppercase"">
+        Delivery instructions
+      </p>
+      <p class=""notes-details"">
+        {{ delivery_method.instructions }}
+      </p>
+    </div>
+  {% endif %}
+  <div class=""footer"">
+    <p>
+      Thank you for shopping with us!
+    </p>
+    <p>
+      <strong>
+        {{ shop.name }}
+      </strong>
+      <br>
+      {{ shop_address.summary }}
+      <br>
+      {{ shop.email }}
+      <br>
+      {{ shop.domain }}
+    </p>
+  </div>
+</div>
+<style type=""text/css"">
+  body {
+    font-size: 15px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    width: 831px;
+    margin: auto;
+    padding: 4em;
+    font-family: ""Noto Sans"", sans-serif;
+    font-weight: 250;
+  }
+
+  .header {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+  }
+
+  .header p {
+    margin: 0;
+  }
+
+  .shop-title {
+    -webkit-box-flex: 6;
+    -webkit-flex: 6;
+    flex: 6;
+    font-size: 1.9em;
+  }
+
+  .order-title {
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+    flex: 4;
+  }
+
+  .customer-addresses {
+    width: 100%;
+    display: inline-block;
+    margin: 2em 0;
+  }
+
+  .address-detail {
+    margin: 0.7em 0 0;
+    line-height: 1.5;
+  }
+
+  .subtitle-bold {
+    font-weight: bold;
+    margin: 0;
+    font-size: 0.85em;
+  }
+
+  .to-uppercase {
+    text-transform: uppercase;
+  }
+
+  .text-align-right {
+    text-align: right;
+  }
+
+  .shipping-address {
+    float: left;
+    min-width: 18em;
+    max-width: 50%;
+  }
+
+  .billing-address {
+    padding-left: 20em;
+    min-width: 18em;
+  }
+
+  .order-container {
+    padding: 0 0.7em;
+  }
+
+  .order-container-header {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1.4em;
+  }
+
+  .order-container-header-left-content {
+    float: left;
+  }
+
+  .order-container-header-right-content {
+    float: right;
+  }
+
+  .flex-line-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.4em 0;
+    page-break-inside: avoid;
+  }
+
+  .flex-line-item-img {
+    margin-right: 1.4em;
+    min-width: {{ desired_image_size }}px;
+  }
+
+  .flex-line-item-description {
+    -webkit-box-flex: 7;
+    -webkit-flex: 7;
+    flex: 7;
+  }
+
+  .line-item-description-line {
+    display: block;
+  }
+
+  .flex-line-item-description p {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .flex-line-item-quantity {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    flex: 3;
+  }
+
+  .subdued-separator {
+    height: 0.07em;
+    border: none;
+    color: lightgray;
+    background-color: lightgray;
+    margin: 0;
+  }
+
+  .missing-line-items-text {
+    margin: 1.4em 0;
+    padding: 0 0.7em;
+  }
+
+  .notes {
+    margin-top: 2em;
+  }
+
+  .notes p {
+    margin-bottom: 0;
+  }
+
+  .notes .notes-details {
+    margin-top: 0.7em;
+  }
+
+  .footer {
+    margin-top: 2em;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .footer p {
+    margin: 0;
+    margin-bottom: 1.4em;
+  }
+
+  hr {
+    height: 0.14em;
+    border: none;
+    color: black;
+    background-color: black;
+    margin: 0;
+  }
+
+  .aspect-ratio {
+    position: relative;
+    display: block;
+    background: #fafbfc;
+    padding: 0;
+  }
+
+  .aspect-ratio::before {
+    z-index: 1;
+    content: """";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(195,207,216,0.3);
+  }
+
+  .aspect-ratio--square {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+
+  .aspect-ratio__content {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+</style>
+",I'm still learning and can't help with that. Do you need help with anything else?
+PRODUCT,9973199339767,title,uk,,,Clay Plant Pot,Глиняний горщик для рослин
+PRODUCT,9973199339767,body_html,uk,,,<p>Classic blown clay pot for plants</p>,<p>Класичний дутий глиняний горщик для рослин</p>
+PRODUCT,9973199339767,handle,uk,,,clay-plant-pot,глиняний-горщик-для-рослин
+PRODUCT,9973199339767,product_type,uk,,,Outdoor,Для активного відпочинку
+PRODUCT,9973199405303,title,uk,,,Copper Light,Мідне світло
+PRODUCT,9973199405303,body_html,uk,,,<p>Stylish copper bedside light</p>,<p>Стильний мідний приліжковий світильник</p>
+PRODUCT,9973199405303,handle,uk,,,copper-light,мідний-світлий
+PRODUCT,9973199405303,product_type,uk,,,Indoor,Для приміщень
+PRODUCT,9973199470839,title,uk,,,Cream Sofa,Кремовий диван
+PRODUCT,9973199470839,body_html,uk,,,<p>Comfortable cream sofa with wooden base</p>,<p>Зручний кремовий диван з дерев'яною основою</p>
+PRODUCT,9973199470839,handle,uk,,,cream-sofa,кремовий диван
+PRODUCT,9973199470839,product_type,uk,,,Indoor,Для приміщень
+PRODUCT,9973199503607,title,uk,,,Antique Drawers,Антикварні шухляди
+PRODUCT,9973199503607,body_html,uk,,,<p>Antique wooden chest of drawers</p>,<p>Антикварний дерев'яний комод</p>
+PRODUCT,9973199503607,handle,uk,,,antique-drawers,антикварні-шухляди
+PRODUCT,9973199503607,product_type,uk,,,Indoor,Для приміщень
+PRODUCT,9973199569143,title,uk,,,White Bed Clothes,Біла постільна білизна
+PRODUCT,9973199569143,body_html,uk,,,<p>Sleek white bed clothes</p>,<p>Елегантна біла постільна білизна</p>
+PRODUCT,9973199569143,handle,uk,,,white-bed-clothes,біла-постільна-білизна
+PRODUCT,9973199569143,product_type,uk,,,Indoor,Для приміщень
+PRODUCT,9973199601911,title,uk,,,Pink Armchair,Рожеве крісло
+PRODUCT,9973199601911,body_html,uk,,,<p>Stylish pink armchair</p>,<p>Стильне рожеве крісло</p>
+PRODUCT,9973199601911,handle,uk,,,pink-armchair,рожеве-крісло
+PRODUCT,9973199601911,product_type,uk,,,Indoor,Для приміщень
+PRODUCT,9973199634679,title,uk,,,Wooden Outdoor Table,Дерев'яний садовий стіл
+PRODUCT,9973199634679,body_html,uk,,,<p>Chic wooden outdoor garden table</p>,<p>Шикарний дерев'яний вуличний садовий стіл</p>
+PRODUCT,9973199634679,handle,uk,,,wooden-outdoor-table,дерев'яний-вуличний-стіл
+PRODUCT,9973199634679,product_type,uk,,,Outdoor,На відкритому повітрі
+PRODUCT,9973199700215,title,uk,,,Brown Throw Pillows,Коричневі декоративні подушки
+PRODUCT,9973199700215,body_html,uk,,,<p>Stylish brown throw pillows</p>,<p>Стильні коричневі декоративні подушки</p>
+PRODUCT,9973199700215,handle,uk,,,brown-throw-pillows,коричневі декоративні подушки
+PRODUCT,9973199700215,product_type,uk,,,Indoor,Для приміщень
+PRODUCT,9973199765751,title,uk,,,White Ceramic Pot,Білий керамічний горщик
+PRODUCT,9973199765751,body_html,uk,,,<p>Homemade white ceramic flower pot</p>,<p>Білий керамічний горщик для квітів ручної роботи</p>
+PRODUCT,9973199765751,handle,uk,,,white-ceramic-pot,білий керамічний горщик
+PRODUCT,9973199765751,product_type,uk,,,Indoor,Для приміщень
+PRODUCT,9973199831287,title,uk,,,Yellow watering can,Жовта лійка
+PRODUCT,9973199831287,body_html,uk,,,<p>Vintage vibrant watering can</p>,<p>Вінтажна яскрава лійка</p>
+PRODUCT,9973199831287,handle,uk,,,yellow-watering-can,жовта лійка
+PRODUCT,9973199831287,product_type,uk,,,Outdoor,На відкритому повітрі
+PRODUCT,9973199896823,title,uk,,,Gardening hand trowel,Садовий ручний совок
+PRODUCT,9973199896823,body_html,uk,,,<p>Metal gardening hand trowel with wooden handle</p>,<p>Металева садова ручна лопатка з дерев'яною ручкою</p>
+PRODUCT,9973199896823,handle,uk,,,gardening-hand-trowel,садова-ручна-лопатка
+PRODUCT,9973199896823,product_type,uk,,,Outdoor,Для активного відпочинку
+PRODUCT,9973199962359,title,uk,,,Biodegradable cardboard pots,Біорозкладні картонні горщики
+PRODUCT,9973199962359,body_html,uk,,,<p>Biodegradable outdoor cardboard pots</p>,<p>Біорозкладні вуличні картонні горщики</p>
+PRODUCT,9973199962359,handle,uk,,,biodegradable-cardboard-pots,біорозкладні-картонні-горщики
+PRODUCT,9973199962359,product_type,uk,,,Outdoor,Для вулиці
+PRODUCT,9973200027895,title,uk,,,Grey Sofa,Сірий диван
+PRODUCT,9973200027895,body_html,uk,,,<p>Large four seater grey sofa</p>,<p>Великий чотиримісний сірий диван</p>
+PRODUCT,9973200027895,handle,uk,,,grey-sofa,сірий диван
+PRODUCT,9973200027895,product_type,uk,,,Indoor,"Приміщення — це земельна ділянка та будівлі, які разом розглядаються як власність. Таке вживання виникло через те, що власники майна знаходили це слово у своїх документах на право власності, де воно спочатку означало «вищезгадане; те, про що йдеться в цьому документі», від латинського prae-missus — «поставлений перед»."
+PRODUCT,9973200093431,title,uk,,,Wooden outdoor slats,Дерев'яні вуличні рейки
+PRODUCT,9973200093431,body_html,uk,,,<p>Wooden outdoor fencing slats</p>,<p>Дерев'яні вуличні парканні планки</p>
+PRODUCT,9973200093431,handle,uk,,,wooden-outdoor-slats,дерев’яні-вуличні-рейки
+PRODUCT,9973200093431,product_type,uk,,,Outdoor,Для активного відпочинку
+PRODUCT,9973200158967,title,uk,,,Wooden Fence,Дерев’яний паркан
+PRODUCT,9973200158967,body_html,uk,,,<p>Wooden garden fence</p>,<p>Дерев'яний садовий паркан</p>
+PRODUCT,9973200158967,handle,uk,,,wooden-fence,дерев'яний-паркан
+PRODUCT,9973200158967,product_type,uk,,,Outdoor,На відкритому повітрі
+PRODUCT,9973200224503,title,uk,,,Yellow Sofa,Жовтий диван
+PRODUCT,9973200224503,body_html,uk,,,<p>Two seater yellow sofa with wooden legs</p>,<p>Двомісний жовтий диван з дерев'яними ніжками</p>
+PRODUCT,9973200224503,handle,uk,,,yellow-sofa,жовтий-диван
+PRODUCT,9973200224503,product_type,uk,,,Indoor,Для приміщень
+PRODUCT,9973200290039,title,uk,,,Knitted Throw Pillows,В'язані декоративні подушки
+PRODUCT,9973200290039,body_html,uk,,,<p>Homemade knitted throw pillows in a variety of colors</p>,<p>В'язані декоративні подушки ручної роботи в асортименті кольорів</p>
+PRODUCT,9973200290039,handle,uk,,,knitted-throw-pillows,в’язані декоративні подушки
+PRODUCT,9973200290039,product_type,uk,,,Indoor,Внутрішній
+PRODUCT,9973200388343,title,uk,,,Vanilla candle,Ванільна свічка
+PRODUCT,9973200388343,body_html,uk,,,<p>Vanilla scent candle in jar</p>,<p>Свічка з ароматом ванілі в банці</p>
+PRODUCT,9973200388343,handle,uk,,,vanilla-candle,ванільна свічка
+PRODUCT,9973200388343,product_type,uk,,,Indoor,Для приміщень
+PRODUCT,9973200453879,title,uk,,,Black Beanbag,Чорний пуф-мішок
+PRODUCT,9973200453879,body_html,uk,,,<p>Black leather beanbag</p>,<p>Чорне шкіряне крісло-мішок</p>
+PRODUCT,9973200453879,handle,uk,,,black-bean-bag,чорне-крісло-мішок
+PRODUCT,9973200453879,product_type,uk,,,Indoor,В приміщенні
+PRODUCT,9973200519415,title,uk,,,Bedside Table,Приліжкова тумба
+PRODUCT,9973200519415,body_html,uk,,,<p>Wooden bedside table</p>,<p>Дерев'яна тумбочка</p>
+PRODUCT,9973200519415,handle,uk,,,bedside-table,приліжкова тумба
+PRODUCT,9973200519415,product_type,uk,,,Indoor,Для приміщень
+PRODUCT,9973702164727,title,uk,,,Daily greens for better energy (USA),Щоденна зелень для кращої енергії (США)
+PRODUCT,9973702164727,body_html,uk,,,"<p><meta charset=""utf-8""><span></span><span></span><span>A simple daily blend with vitamins, minerals, and plant-based nutrients to support energy, focus, and overall wellness.</span></p>","<p><meta charset=""utf-8""><span></span><span></span><span>Проста щоденна суміш із вітамінами, мінералами та рослинними поживними речовинами для підтримки енергії, фокусу та загального самопочуття.</span></p>"
+PRODUCT,9973702164727,handle,uk,,,daily-greens-for-better-energy,щоденна зелень для кращої енергії
+PRODUCT,9973702164727,product_type,uk,,,,
+PRODUCT,9975118102775,title,uk,,,Daily greens for better energy (EU),Щоденна зелень для кращої енергії (ЄС)
+PRODUCT,9975118102775,body_html,uk,,,"<p><meta charset=""utf-8""><span></span><span></span><span>A simple daily blend with vitamins, minerals, and plant-based nutrients to support energy, focus, and overall wellness.</span></p>","<p><meta charset=""utf-8""><span></span><span></span><span>Проста щоденна суміш із вітамінами, мінералами та рослинними поживними речовинами для підтримки енергії, фокусу та загального самопочуття.</span></p>"
+PRODUCT,9975118102775,handle,uk,,,daily-greens-for-better-energy-eu,Щоденна зелень для кращої енергії — ЄС
+PRODUCT,9975118102775,product_type,uk,,,,
+PRODUCT_OPTION,12528557785335,name,uk,,,Size,Розмір
+PRODUCT_OPTION,12528557850871,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528557916407,name,uk,,,Title,Назва
+PRODUCT_OPTION,12528557949175,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558014711,name,uk,,,Title,Назва
+PRODUCT_OPTION,12528558047479,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558080247,name,uk,,,Title,Назва
+PRODUCT_OPTION,12528558145783,name,uk,,,Title,Назва
+PRODUCT_OPTION,12528558211319,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558276855,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558342391,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558407927,name,uk,,,Title,Назва
+PRODUCT_OPTION,12528558473463,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558538999,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558604535,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558670071,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558735607,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558866679,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558932215,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12528558997751,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12529074667767,name,uk,,,Title,Заголовок
+PRODUCT_OPTION,12530761302263,name,uk,,,Title,Заголовок
+PRODUCT_OPTION_VALUE,6048607437047,name,uk,,,Regular,Звичайний
+PRODUCT_OPTION_VALUE,6048607469815,name,uk,,,Large,Великий
+PRODUCT_OPTION_VALUE,6048607535351,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048607633655,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048607666423,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048607731959,name,uk,,,Default Title,Назва за замовчуванням
+PRODUCT_OPTION_VALUE,6048607764727,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048607797495,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048607895799,name,uk,,,Default Title,Стандартна назва
+PRODUCT_OPTION_VALUE,6048607961335,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048608026871,name,uk,,,Default Title,Стандартний заголовок
+PRODUCT_OPTION_VALUE,6048608092407,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048608157943,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048608256247,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048608321783,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048608387319,name,uk,,,Default Title,Стандартний заголовок
+PRODUCT_OPTION_VALUE,6048608452855,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048608518391,name,uk,,,Default Title,Типовий заголовок
+PRODUCT_OPTION_VALUE,6048608813303,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048608878839,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6048608977143,name,uk,,,Default Title,Заголовок за замовчуванням
+PRODUCT_OPTION_VALUE,6049671807223,name,uk,,,Default Title,Стандартний заголовок
+PRODUCT_OPTION_VALUE,6056917500151,name,uk,,,Default Title,Заголовок за замовчуванням
+SHOP_POLICY,48733815031,body,uk,,,"<div>
+  <p>Last updated: {{ last_updated }}</p>
+  <p>{{ shop_name }} operates this store and website, including all related information, content, features, tools, products and services, in order to provide you, the customer, with a curated shopping experience (the  ""Services""). {{ shop_name }} is powered by Shopify, which enables us to provide the Services to you. This Privacy Policy describes how we collect, use, and disclose your personal information when you visit, use, or make a purchase or other transaction using the Services or otherwise communicate with us. If there is a conflict between our Terms of Service and this Privacy Policy, this Privacy Policy controls with respect to the collection, processing, and disclosure of your personal information. </p>
+  <p>Please read this Privacy Policy carefully. By using and accessing any of the Services, you acknowledge that you have read this Privacy Policy and understand the collection, use, and disclosure of your information as described in this Privacy Policy.</p>
+  <h2>Personal Information We Collect or Process</h2>
+  <p>When we use the term  ""personal information,"" we are referring to information that identifies or can reasonably be linked to you or another person. Personal information does not include information that is collected anonymously or that has been de-identified, so that it cannot identify or be reasonably linked to you. We may collect or process the following categories of personal information, including inferences drawn from this personal information, depending on how you interact with the Services, where you live, and as permitted or required by applicable law:</p>
+  <ul>
+      <li><strong>Contact details</strong> including your name, address, billing address, shipping address, phone number, and email address.</li>
+      <li><strong>Financial information</strong> including credit card, debit card, and financial account numbers, payment card information, financial account information, transaction details, form of payment, payment confirmation and other payment details.</li>
+      <li><strong>Account information</strong> including your username, password, security questions, preferences and settings.</li>
+      <li><strong>Transaction information</strong> including the items you view, put in your cart, add to your wishlist, or purchase, return, exchange or cancel and your past transactions.</li>
+      <li><strong>Communications with us</strong> including the information you include in communications with us, for example, when sending a customer support inquiry.</li>
+      <li><strong>Device information</strong> including information about your device, browser, or network connection, your IP address, and other unique identifiers.</li>
+      <li><strong>Usage information</strong> including information regarding your interaction with the Services, including how and when you interact with or navigate the Services. </li>
+  </ul>
+  <h2>Personal Information Sources</h2>
+  <p>We may collect personal information from the following sources:</p>
+  <ul>
+      <li><strong>Directly from you</strong> including when you create an account, visit or use the Services, communicate with us, or otherwise provide us with your personal information;</li>
+      <li><strong>Automatically through the Services</strong> including from your device when you use our products or services or visit our websites, and through the use of cookies and similar technologies;</li>
+      <li><strong>From our service providers</strong> including when we engage them to enable certain technology and when they collect or process your personal information on our behalf; </li>
+      <li><strong>From our partners or other third parties.</strong></li>
+  </ul>
+  <h2>How We Use Your Personal Information</h2>
+  <p>Depending on how you interact with us or which of the Services you use, we may use personal information for the following purposes:</p>
+  <ul>
+      <li><strong>Provide, Tailor, and Improve the Services.</strong> We use your personal information to provide you with the Services, including to perform our contract with you, to process your payments, to fulfill your orders, to remember your preferences and items you are interested in, to send notifications to you related to your account, to process purchases, returns, exchanges or other transactions, to create, maintain and otherwise manage your account, to arrange for shipping, to facilitate any returns and exchanges, to enable you to post reviews, and to create a customized shopping experience for you, such as recommending products related to your purchases. This may include using your personal information to better tailor and improve the Services.</li>
+      <li><strong>Marketing and Advertising.</strong> We use your personal information for marketing and promotional purposes, such as to send marketing, advertising and promotional communications by email, text message or postal mail, and to show you online advertisements for products or services on the Services or other websites, including based on items you previously have purchased or added to your cart and other activity on the Services. </li>
+      <li><strong>Security and Fraud Prevention.</strong> We use your personal information to authenticate your account, to provide a secure payment and shopping experience, detect, investigate or take action regarding possible fraudulent, illegal, unsafe, or malicious activity, protect public safety, and to secure our services. If you choose to use the Services and register an account, you are responsible for keeping your account credentials safe. We highly recommend that you do not share your username, password or other access details with anyone else.</li>
+      <li><strong>Communicating with You.</strong> We use your personal information to provide you with customer support, to be responsive to you, to provide effective services to you and to maintain our business relationship with you. </li>
+      <li><strong>Legal Reasons.</strong> We use your personal information to comply with applicable law or respond to valid legal process, including requests from law enforcement or government agencies, to investigate or participate in civil discovery, potential or actual litigation, or other adversarial legal proceedings, and to enforce or investigate potential violations of our terms or policies.</li>
+  </ul>
+  <h2>How We Disclose Personal Information</h2>
+  <p>In certain circumstances, we may disclose your personal information to third parties for legitimate purposes subject to this Privacy Policy. Such circumstances may include:</p>
+  <ul>
+      <li>With Shopify, vendors and other third parties who perform services on our behalf (e.g. IT management, payment processing, data analytics, customer support, cloud storage, fulfillment and shipping).</li>
+      <li>With business and marketing partners to provide marketing services and advertise to you. {% if shopify_network_intelligence_enabled %} For example, we use Shopify to support personalized advertising with third-party services based on your online activity with different merchants and websites.{% endif %}  Our business and marketing partners will use your information in accordance with their own privacy notices. Depending on where you reside, you may have a right to direct us not to share information about you to show you targeted advertisements and marketing based on your online activity with different merchants and websites. {% if data_sale_opt_out_enabled %}You can exercise your rights to opt-out of those uses <a href=""{{ data_sale_opt_out_page_url }}""> here</a> {% endif %}.</li>
+      <li>When you direct, request us or otherwise consent to our disclosure of certain information to third parties, such as to ship you products or through your use of social media widgets or login integrations.</li>
+      <li>With our affiliates or otherwise within our corporate group.</li>
+      <li>
+      In connection with a business transaction such as a merger or bankruptcy, to comply with any applicable legal obligations (including to respond to subpoenas, search warrants and similar requests), to enforce any applicable terms of service or policies, and to protect or defend the Services, our rights, and the rights of our users or others.
+      </li>
+  </ul>
+  <h2>Relationship with Shopify</h2>
+  <p>The Services are hosted by Shopify, which collects and processes personal information about your access to and use of the Services in order to provide and improve the Services for you. Information you submit to the Services will be transmitted to and shared with Shopify as well as third parties that may be located in countries other than where you reside, in order to provide and improve the Services for you. {% if shopify_network_intelligence_enabled %}In addition, to help protect, grow, and improve our business, we use certain Shopify enhanced features that incorporate data and information obtained from your interactions with our Store, along with other merchants and with Shopify. To provide these enhanced features, Shopify may make use of personal information collected about your interactions with our store, along with other merchants, and with Shopify. In these circumstances, Shopify is responsible for the processing of your personal information, including for responding to your requests to exercise your rights over use of your personal information for these purposes.{% endif %} To learn more about how Shopify uses your personal information and any rights you may have, you can visit the <a href=""https://www.shopify.com/legal/privacy/app-users"">Shopify Consumer Privacy Policy</a> . Depending on where you live, you may exercise certain rights with respect to your personal information here <a href=""https://privacy.shopify.com/en"">Shopify Privacy Portal Link</a>. </p>
+  <h2>Third Party Websites and Links</h2>
+  <p>The Services may provide links to websites or other online platforms operated by third parties. If you follow links to sites not affiliated or controlled by us, you should review their privacy and security policies and other terms and conditions. We do not guarantee and are not responsible for the privacy or security of such sites, including the accuracy, completeness, or reliability of information found on these sites. Information you provide on public or semi-public venues, including information you share on third-party social networking platforms may also be viewable by other users of the Services and/or users of those third-party platforms without limitation as to its use by us or by a third party. Our inclusion of such links does not, by itself, imply any endorsement of the content on such platforms or of their owners or operators, except as disclosed on the Services.</p>
+  <h2>Children's Data</h2>
+  <p>The Services are not intended to be used by children, and we do not knowingly collect any personal information about children under the age of majority in your jurisdiction. If you are the parent or guardian of a child who has provided us with their personal information, you may contact us using the contact details set out below to request that it be deleted.As of the Effective Date of this Privacy Policy, we do not have actual knowledge that we  ""share"" or  ""sell"" (as those terms are defined in applicable law) personal information of individuals under 16 years of age.</p>
+  <h2>Security and Retention of Your Information</h2>
+  <p>Please be aware that no security measures are perfect or impenetrable, and we cannot guarantee ""perfect security."" In addition, any information you send to us may not be secure while in transit. We recommend that you do not use unsecure channels to communicate sensitive or confidential information to us.</p>
+  <p>How long we retain your personal information depends on different factors, such as whether we need the information to maintain your account, to provide you with Services, comply with legal obligations, resolve disputes or enforce other applicable contracts and policies.</p>
+  <h2>Your Rights and Choices</h2>
+  <p>Depending on where you live, you may have some or all of the rights listed below in relation to your personal information. However, these rights are not absolute, may apply only in certain circumstances and, in certain cases, we may decline your request as permitted by law.</p>
+  <ul>
+      <li><strong>Right to Access / Know.</strong> You may have a right to request access to personal information that we hold about you.</li>
+      <li><strong>Right to Delete.</strong> You may have a right to request that we delete personal information we maintain about you.</li>
+      <li><strong>Right to Correct.</strong> You may have a right to request that we correct inaccurate personal information we maintain about you.</li>
+      <li><strong>Right of Portability.</strong> You may have a right to receive a copy of the personal information we hold about you and to request that we transfer it to a third party, in certain circumstances and with certain exceptions.</li>
+      {% if selling_to_united_states %}<li><strong>Right to Opt out of Sale or Sharing for Targeted Advertising.</strong> Depending on where you reside, you may have a right to opt out of the ""sale"" or ""share"" of your personal information or to opt out of the processing of your personal information for purposes considered to be ""targeted advertising"", as defined in applicable privacy laws. {% if data_sale_opt_out_enabled  %}You can exercise your rights to opt-out of those uses <a href=""{{ data_sale_opt_out_page_url }}"">here</a>. Please note that if you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will automatically treat this as a request to opt-out for the device and browser that you use to visit the website. If we are able to associate the device sending the signal to a Shopify account, we will apply the opt out request to the account as well. To learn more about Global Privacy Control, you can visit https://globalprivacycontrol.org/. Other than the Global Privacy Control, we do not recognize other ""Do Not Track"" signals that may be sent from your web browser or device.{% endif %}</li>{% endif %}
+      <li>
+      <strong>Managing Communication Preferences.</strong> We may send you promotional emails, and you may opt out of receiving these at any time by using the unsubscribe option displayed in our emails to you. If you opt out, we may still send you non-promotional emails, such as those about your account or orders that you have made.
+      </li>
+  </ul>
+  <div>
+      {% if selling_to_europe %}
+      <p><strong>If you reside in the UK or European Economic Area,</strong> and subject to exceptions and limitations provided by local law, you may exercise the following rights in addition to the rights outlined above:</p>
+      <ul>
+      <li><strong>Objection to Processing and Restriction of Processing:</strong> You may have the right to ask us to stop or restrict our processing of personal information for certain purposes. </li>
+      <li><strong>Withdrawal of Consent:</strong> Where we rely on consent to process your personal information, you have the right to withdraw this consent. If you withdraw your consent, this will not affect the lawfulness of any processing based on your consent before its withdrawal.</li>
+      </ul>
+      {% endif %}
+  </div>
+  <p>You may exercise any of these rights where indicated on the Services or by contacting us using the contact details provided below. To learn more about how Shopify uses your personal information and any rights you may have, including rights related to data processed by Shopify, you can visit https://privacy.shopify.com/en. </p>
+  <p>We will not discriminate against you for exercising any of these rights. We may need to verify your identity before we can process your requests, as permitted or required under applicable law. In accordance with applicable laws, you may designate an authorized agent to make requests on your behalf to exercise your rights. Before accepting such a request from an agent, we will require that the agent provide proof you have authorized them to act on your behalf, and we may need you to verify your identity directly with us. We will respond to your request in a timely manner as required under applicable law.</p>
+  <h2>Complaints</h2>
+  <p>If you have complaints about how we process your personal information, please contact us using the contact details provided below. Depending on where you live, you may have the right to appeal our decision by contacting us using the contact details set out below, or lodge your complaint with your local data protection authority.{% if selling_to_europe %} For the EEA, you can find a list of the responsible data protection supervisory authorities <a href=""https://edpb.europa.eu/about-edpb/about-edpb/members"">here</a>.{% endif %}</p>
+  <h2>International Transfers</h2>
+  <p>Please note that we may transfer, store and process your personal information outside the country you live in. </p>
+  <p>If we transfer your personal information out of the European Economic Area or the United Kingdom, we will rely on recognized transfer mechanisms like the European Commission's Standard Contractual Clauses, or any equivalent contracts issued by the relevant competent authority of the UK, as relevant, unless the data transfer is to a country that has been determined to provide an adequate level of protection.</p>
+  <h2>Changes to This Privacy Policy</h2>
+  <p>We may update this Privacy Policy from time to time, including to reflect changes to our practices or for other operational, legal, or regulatory reasons. We will post the revised Privacy Policy on this website, update the  ""Last updated"" date and provide notice as required by applicable law.</p>
+  <h2>Contact</h2>
+  <p>Should you have any questions about our privacy practices or this Privacy Policy, or if you would like to exercise any of the rights available to you, please call {{ phone }} or email us at {{ email }}{% if address != blank %} or contact us at {{ address }}{% endif %} {% if selling_to_europe %}For the purpose of applicable data protection laws, we are the data controller of your personal information. {% endif %}</p>
+</div>","<div>
+<p>Останнє оновлення: {{ last_updated }}</p>
+<p>{{ shop_name }} керує цим магазином і вебсайтом, включаючи всю пов’язану інформацію, контент, функції, інструменти, продукти та послуги, щоб надати вам, клієнту, персоналізований досвід покупок («Послуги»). {{ shop_name }} працює на базі Shopify, що дозволяє нам надавати вам Послуги. Ця Політика конфіденційності описує, як ми збираємо, використовуємо та розкриваємо вашу особисту інформацію, коли ви відвідуєте, використовуєте або робите покупку чи іншу транзакцію за допомогою Послуг або іншим чином спілкуєтеся з нами. Якщо існує конфлікт між нашими Умовами надання послуг і цією Політикою конфіденційності, ця Політика конфіденційності має переважну силу щодо збору, обробки та розкриття вашої особистої інформації.</p>
+<p>Будь ласка, уважно прочитайте цю Політику конфіденційності. Використовуючи Послуги та отримуючи до них доступ, ви підтверджуєте, що прочитали цю Політику конфіденційності та розумієте збір, використання та розкриття вашої інформації, як описано в цій Політиці конфіденційності.</p>
+<h2>Особиста інформація, яку ми збираємо або обробляємо</h2>
+<p>Коли ми використовуємо термін «особиста інформація», ми маємо на увазі інформацію, яка ідентифікує або може бути обґрунтовано пов’язана з вами або іншою особою. Особиста інформація не включає інформацію, яка була зібрана анонімно або з якої було видалено ідентифікаційні дані, так що вона не може ідентифікувати вас або бути обґрунтовано пов’язаною з вами. Ми можемо збирати або обробляти наступні категорії особистої інформації, включаючи висновки, зроблені на основі цієї особистої інформації, залежно від того, як ви взаємодієте з Послугами, де ви проживаєте, а також згідно з дозволом або вимогою чинного законодавства:</p>
+<ul>
+<li><strong>Контактні дані</strong>, включаючи ваше ім’я, адресу, адресу виставлення рахунку, адресу доставки, номер телефону та адресу електронної пошти.</li>
+<li><strong>Фінансова інформація</strong>, включаючи номери кредитних карток, дебетових карток та фінансових рахунків, інформацію про платіжні картки, інформацію про фінансові рахунки, деталі транзакцій, форму оплати, підтвердження оплати та інші деталі платежу.</li>
+<li><strong>Інформація про обліковий запис</strong>, включаючи ваше ім’я користувача, пароль, секретні питання, вподобання та налаштування.</li>
+<li><strong>Інформація про транзакції</strong>, включаючи товари, які ви переглядаєте, додаєте в кошик, додаєте до списку бажань або купуєте, повертаєте, обмінюєте чи скасовуєте, а також ваші минулі транзакції.</li>
+<li><strong>Спілкування з нами</strong>, включаючи інформацію, яку ви надаєте в повідомленнях до нас, наприклад, при надсиланні запиту до служби підтримки клієнтів.</li>
+<li><strong>Інформація про пристрій</strong>, включаючи інформацію про ваш пристрій, браузер або мережеве з’єднання, вашу IP-адресу та інші унікальні ідентифікатори.</li>
+<li><strong>Інформація про використання</strong>, включаючи інформацію про вашу взаємодію з Послугами, зокрема про те, як і коли ви взаємодієте з Послугами або здійснюєте навігацію ними.</li>
+</ul>
+<h2>Джерела особистої інформації</h2>
+<p>Ми можемо збирати особисту інформацію з наступних джерел:</p>
+<ul>
+<li><strong>Безпосередньо від вас</strong>, зокрема коли ви створюєте обліковий запис, відвідуєте або використовуєте Послуги, спілкуєтеся з нами або іншим чином надаєте нам свою особисту інформацію;</li>
+<li><strong>Автоматично через Послуги</strong>, зокрема з вашого пристрою, коли ви користуєтеся нашими продуктами чи послугами або відвідуєте наші вебсайти, а також через використання файлів cookie та подібних технологій;</li>
+<li><strong>Від наших постачальників послуг</strong>, зокрема коли ми залучаємо їх для впровадження певних технологій і коли вони збирають або обробляють вашу особисту інформацію від нашого імені;</li>
+<li><strong>Від наших партнерів або інших третіх сторін.</strong></li>
+</ul>
+<h2>Як ми використовуємо вашу особисту інформацію</h2>
+<p>Залежно від того, як ви взаємодієте з нами або якими Послугами користуєтеся, ми можемо використовувати особисту інформацію для наступних цілей:</p>
+<ul>
+<li><strong>Надання, адаптація та покращення Послуг.</strong> Ми використовуємо вашу особисту інформацію для надання вам Послуг, зокрема для виконання нашого договору з вами, обробки ваших платежів, виконання ваших замовлень, запам'ятовування ваших уподобань та товарів, якими ви цікавитеся, надсилання вам сповіщень, пов’язаних з вашим обліковим записом, обробки покупок, повернень, обмінів або інших транзакцій, створення, підтримки та іншого керування вашим обліковим записом, організації доставки, сприяння будь-яким поверненням та обмінам, надання вам можливості публікувати відгуки та створення для вас індивідуального досвіду покупок, наприклад, рекомендування продуктів, пов'язаних з вашими покупками. Це може включати використання вашої особистої інформації для кращої адаптації та покращення Послуг.</li>
+<li><strong>Маркетинг і реклама.</strong> Ми використовуємо вашу особисту інформацію в маркетингових і рекламних цілях, наприклад, для надсилання маркетингових, рекламних та промо-повідомлень електронною поштою, текстовими повідомленнями або поштою, а також для показу вам онлайн-реклами продуктів або послуг у Послугах або на інших вебсайтах, у тому числі на основі товарів, які ви раніше купували або додавали до кошика, та іншої активності в Послугах.</li>
+<li><strong>Безпека та запобігання шахрайству.</strong> Ми використовуємо вашу особисту інформацію для автентифікації вашого облікового запису, забезпечення безпечного процесу оплати та покупок, виявлення, розслідування або вжиття заходів щодо можливої шахрайської, незаконної, небезпечної або зловмисної діяльності, захисту громадської безпеки та захисту наших послуг. Якщо ви вирішите користуватися Послугами та зареєструєте обліковий запис, ви несете відповідальність за збереження своїх облікових даних. Ми наполегливо рекомендуємо вам нікому не повідомляти своє ім’я користувача, пароль або інші деталі доступу.</li>
+<li><strong>Спілкування з вами.</strong> Ми використовуємо вашу особисту інформацію, щоб надавати вам підтримку, відповідати на ваші запити, надавати вам ефективні послуги та підтримувати наші ділові відносини з вами.</li>
+<li><strong>Юридичні причини.</strong> Ми використовуємо вашу особисту інформацію для дотримання чинного законодавства або відповіді на законні судові запити, включаючи запити від правоохоронних органів або державних установ, для розслідування або участі в цивільному процесі, потенційних або фактичних судових спорах чи інших змагальних судових процесах, а також для забезпечення дотримання або розслідування потенційних порушень наших умов або політик.</li>
+</ul>
+<h2>Як ми розкриваємо особисту інформацію</h2>
+<p>За певних обставин ми можемо розкривати вашу особисту інформацію третім особам у законних цілях відповідно до цієї Політики конфіденційності. Такі обставини можуть включати:</p>
+<ul>
+<li>З Shopify, постачальниками та іншими третіми сторонами, які надають послуги від нашого імені (наприклад, управління ІТ, обробка платежів, аналіз даних, підтримка клієнтів, хмарне сховище, виконання та доставка замовлень).</li>
+<li>З діловими та маркетинговими партнерами для надання маркетингових послуг та показу вам реклами. {% if shopify_network_intelligence_enabled %} Наприклад, ми використовуємо Shopify для підтримки персоналізованої реклами зі сторонніми сервісами на основі вашої онлайн-активності з різними продавцями та на різних вебсайтах.{% endif %} Наші ділові та маркетингові партнери використовуватимуть вашу інформацію відповідно до власних повідомлень про конфіденційність. Залежно від того, де ви проживаєте, ви можете мати право вимагати від нас не передавати інформацію про вас для показу вам таргетованої реклами та маркетингу на основі вашої онлайн-активності з різними продавцями та на різних вебсайтах. {% if data_sale_opt_out_enabled %}Ви можете скористатися своїм правом відмовитися від такого використання <a href=""{{ data_sale_opt_out_page_url }}"">тут</a> {% endif %}.</li>
+<li>Коли ви вказуєте, просите нас або іншим чином погоджуєтеся на розкриття нами певної інформації третім особам, наприклад, для доставки вам товарів або через використання вами віджетів соціальних мереж чи інтеграцій для входу.</li>
+<li>З нашими афілійованими особами або іншим чином у межах нашої корпоративної групи.</li>
+<li>У зв’язку з бізнес-операцією, такою як злиття або банкрутство, для дотримання будь-яких застосовних юридичних зобов’язань (включаючи відповідь на повістки до суду, ордери на обшук та подібні запити), для забезпечення дотримання будь-яких застосовних умов надання послуг або політик, а також для захисту Послуг, наших прав та прав наших користувачів або інших осіб.</li>
+</ul>
+<h2>Відносини з Shopify</h2>
+<p>Послуги розміщені на Shopify, яка збирає та обробляє особисту інформацію про ваш доступ до Послуг та їх використання з метою надання та покращення Послуг для вас. Інформація, яку ви надаєте Послугам, буде передаватися та передаватися Shopify, а також третім особам, які можуть перебувати в країнах, відмінних від країни вашого проживання, з метою надання та покращення Послуг для вас. {% if shopify_network_intelligence_enabled %}Крім того, щоб допомогти захистити, розвивати та покращувати наш бізнес, ми використовуємо певні розширені функції Shopify, які включають дані та інформацію, отримані в результаті вашої взаємодії з нашим Магазином, а також з іншими продавцями та з Shopify. Для надання цих розширених функцій Shopify може використовувати особисту інформацію, зібрану про вашу взаємодію з нашим магазином, іншими продавцями та Shopify. У цих обставинах Shopify несе відповідальність за обробку вашої особистої інформації, включаючи відповіді на ваші запити щодо реалізації ваших прав на використання вашої особистої інформації для цих цілей.{% endif %} Щоб дізнатися більше про те, як Shopify використовує вашу особисту інформацію та про будь-які права, які ви можете мати, ви можете відвідати <a href=""https://www.shopify.com/legal/privacy/app-users"">Політику конфіденційності споживачів Shopify</a>. Залежно від того, де ви проживаєте, ви можете скористатися певними правами щодо своєї особистої інформації тут <a href=""https://privacy.shopify.com/en"">Посилання на портал конфіденційності Shopify</a>.</p>
+<h2>Сторонні вебсайти та посилання</h2>
+<p>Послуги можуть містити посилання на вебсайти або інші онлайн-платформи, якими керують треті сторони. Якщо ви переходите за посиланнями на сайти, які не пов'язані з нами або не контролюються нами, вам слід ознайомитися з їхніми політиками конфіденційності та безпеки, а також іншими умовами. Ми не гарантуємо і не несемо відповідальності за конфіденційність або безпеку таких сайтів, включаючи точність, повноту або надійність інформації, розміщеної на цих сайтах. Інформація, яку ви надаєте в публічних або напівпублічних місцях, включаючи інформацію, якою ви ділитеся на сторонніх платформах соціальних мереж, також може бути доступною для перегляду іншим користувачам Послуг та/або користувачам цих сторонніх платформ без обмежень щодо її використання нами або третьою стороною. Включення нами таких посилань саме по собі не означає схвалення контенту на таких платформах або їхніх власників чи операторів, за винятком випадків, розкритих у Послугах.</p>
+<h2>Дані дітей</h2>
+<p>Послуги не призначені для використання дітьми, і ми свідомо не збираємо жодної особистої інформації про дітей, які не досягли повноліття у вашій юрисдикції. Якщо ви є батьком або опікуном дитини, яка надала нам свою особисту інформацію, ви можете зв’язатися з нами за вказаними нижче контактними даними та подати запит на її видалення. Станом на дату набрання чинності цією Політикою конфіденційності ми не маємо фактичних даних про те, що ми «передаємо» або «продаємо» (як ці терміни визначені в чинному законодавстві) особисту інформацію осіб віком до 16 років.</p>
+<h2>Безпека та зберігання вашої інформації</h2>
+<p>Будь ласка, майте на увазі, що жодні заходи безпеки не є досконалими або непроникними, і ми не можемо гарантувати «абсолютну безпеку». Крім того, будь-яка інформація, яку ви надсилаєте нам, може бути не захищена під час передачі. Ми рекомендуємо не використовувати незахищені канали для передачі нам конфіденційної інформації.</p>
+<p>Те, як довго ми зберігаємо вашу особисту інформацію, залежить від різних факторів, таких як необхідність інформації для підтримки вашого облікового запису, надання вам Послуг, дотримання юридичних зобов’язань, вирішення суперечок або забезпечення виконання інших відповідних контрактів і політик.</p>
+<h2>Ваші права та вибір</h2>
+<p>Залежно від того, де ви проживаєте, ви можете мати деякі або всі перелічені нижче права щодо вашої особистої інформації. Однак ці права не є абсолютними, можуть застосовуватися лише за певних обставин і, у певних випадках, ми можемо відхилити ваш запит згідно з дозволом закону.</p>
+<ul>
+<li><strong>Право на доступ / ознайомлення.</strong> Ви можете мати право вимагати доступу до особистої інформації про вас, яку ми зберігаємо.</li>
+<li><strong>Право на видалення.</strong> Ви можете мати право вимагати видалення особистої інформації про вас, яку ми зберігаємо.</li>
+<li><strong>Право на виправлення.</strong> Ви можете мати право вимагати виправлення неточної особистої інформації про вас, яку ми зберігаємо.</li>
+<li><strong>Право на перенесення.</strong> Ви можете мати право отримати копію особистої інформації про вас, яку ми зберігаємо, і вимагати її передачі третій стороні за певних обставин і з певними винятками.</li>
+{% if selling_to_united_states %}<li><strong>Право відмовитися від продажу або передачі інформації для таргетованої реклами.</strong> Залежно від того, де ви проживаєте, ви можете мати право відмовитися від «продажу» або «передачі» вашої особистої інформації або відмовитися від обробки вашої особистої інформації для цілей, що вважаються «таргетованою рекламою», як це визначено в застосовних законах про конфіденційність. {% if data_sale_opt_out_enabled %}Ви можете скористатися своїми правами на відмову від такого використання <a href=""{{ data_sale_opt_out_page_url }}"">тут</a>. Зверніть увагу, що якщо ви відвідаєте наш вебсайт із увімкненим сигналом переваги відмови Global Privacy Control, залежно від того, де ви перебуваєте, ми автоматично сприймемо це як запит на відмову для пристрою та браузера, які ви використовуєте для відвідування вебсайту. Якщо ми зможемо пов’язати пристрій, що надсилає сигнал, з обліковим записом Shopify, ми також застосуємо запит на відмову до облікового запису. Щоб дізнатися більше про Global Privacy Control, ви можете відвідати https://globalprivacycontrol.org/. Окрім Global Privacy Control, ми не розпізнаємо інші сигнали «Do Not Track», які можуть надсилатися з вашого веббраузера або пристрою.{% endif %}</li>{% endif %}
+<li>
+<strong>Керування вподобаннями щодо спілкування.</strong> Ми можемо надсилати вам рекламні електронні листи, і ви можете будь-коли відмовитися від їх отримання, скориставшись опцією скасування підписки, що міститься в наших електронних листах. Якщо ви відмовитеся, ми все одно можемо надсилати вам нерекламні електронні листи, наприклад, про ваш обліковий запис або замовлення, які ви зробили.
+</li>
+</ul>
+<div>
+{% if selling_to_europe %}
+<p><strong>Якщо ви проживаєте у Великобританії або Європейській економічній зоні,</strong> за умови винятків та обмежень, передбачених місцевим законодавством, ви можете скористатися наступними правами на додаток до прав, викладених вище:</p>
+<ul>
+<li><strong>Заперечення проти обробки та обмеження обробки:</strong> Ви можете мати право попросити нас припинити або обмежити обробку вашої особистої інформації для певних цілей.</li>
+<li><strong>Відкликання згоди:</strong> Якщо ми покладаємося на згоду для обробки вашої особистої інформації, ви маєте право відкликати цю згоду. Якщо ви відкличете свою згоду, це не вплине на законність будь-якої обробки, заснованої на вашій згоді до її відкликання.</li>
+</ul>
+{% endif %}
+</div>
+<p>Ви можете скористатися будь-яким із цих прав там, де вказано в Послугах, або зв’язавшись із нами за вказаними нижче контактними даними. Щоб дізнатися більше про те, як Shopify використовує вашу особисту інформацію та про будь-які права, які ви можете мати, включаючи права щодо даних, які обробляє Shopify, ви можете відвідати https://privacy.shopify.com/en.</p>
+<p>Ми не будемо дискримінувати вас за реалізацію будь-якого з цих прав. Нам може знадобитися підтвердити вашу особу, перш ніж ми зможемо обробити ваші запити, як це дозволено або вимагається чинним законодавством. Відповідно до чинного законодавства, ви можете призначити уповноваженого агента для подання запитів від вашого імені щодо реалізації ваших прав. Перед прийняттям такого запиту від агента ми вимагатимемо, щоб агент надав докази того, що ви уповноважили його діяти від вашого імені, і нам може знадобитися, щоб ви підтвердили свою особу безпосередньо нам. Ми відповімо на ваш запит у встановлений термін відповідно до чинного законодавства.</p>
+<h2>Скарги</h2>
+<p>Якщо у вас є скарги щодо того, як ми обробляємо вашу особисту інформацію, будь ласка, зв’яжіться з нами за вказаними нижче контактними даними. Залежно від того, де ви проживаєте, ви можете мати право оскаржити наше рішення, зв’язавшись із нами за вказаними нижче контактними даними, або подати скаргу до місцевого органу захисту даних. {% if selling_to_europe %} Для ЄЕЗ список відповідальних наглядових органів із захисту даних можна знайти <a href=""https://edpb.europa.eu/about-edpb/about-edpb/members"">тут</a>.{% endif %}</p>
+<h2>Міжнародні передачі</h2>
+<p>Зверніть увагу, що ми можемо передавати, зберігати та обробляти вашу особисту інформацію за межами країни вашого проживання.</p>
+<p>Якщо ми передаємо вашу особисту інформацію за межі Європейської економічної зони або Сполученого Королівства, ми покладатимемося на визнані механізми передачі, такі як Стандартні договірні положення Європейської комісії або будь-які еквівалентні контракти, видані відповідним компетентним органом Великобританії, якщо передача даних не здійснюється в країну, щодо якої було визначено адекватний рівень захисту.</p>
+<h2>Зміни до цієї Політики конфіденційності</h2>
+<p>Ми можемо час від часу оновлювати цю Політику конфіденційності, зокрема щоб відобразити зміни в наших практиках або з інших операційних, юридичних чи регуляторних причин. Ми опублікуємо переглянуту Політику конфіденційності на цьому вебсайті, оновимо дату «Останнє оновлення» та надамо сповіщення відповідно до вимог чинного законодавства.</p>
+<h2>Контакти</h2>
+<p>Якщо у вас виникнуть запитання щодо нашої політики конфіденційності або цієї Політики конфіденційності, або якщо ви хочете скористатися будь-яким із доступних вам прав, будь ласка, зателефонуйте за номером {{ phone }} або напишіть нам на {{ email }}{% if address != blank %} або зв’яжіться з нами за адресою {{ address }}{% endif %} {% if selling_to_europe %}Відповідно до застосовних законів про захист даних, ми є контролером ваших персональних даних. {% endif %}</p>
+</div>"

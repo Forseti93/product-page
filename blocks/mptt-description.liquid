@@ -1,0 +1,123 @@
+
+{%- style -%}
+  #shopify-block-{{ block.id }} {
+    margin-top: {{ block.settings.margin_top_desktop }}px;
+    max-width: {{ block.settings.max_width_desktop }}px;
+
+    @media screen and (max-width: {{ block.settings.styles_breakpoint }}px) {
+      & {
+        margin-top: {{ block.settings.margin_top_mobile }}px;
+        max-width: {{ block.settings.max_width_mobile }}px;
+      }
+    }
+  }
+
+  #shopify-block-{{ block.id }} .mptt-description {
+    font-size: {{ block.settings.font_size_desktop }}px;
+    font-weight: {{ block.settings.font_weight }};
+    color: {{ block.settings.color }};
+
+    & > *:nth-child(2) { margin-top: 0; }
+    & > *:last-child { margin-bottom: 0; }
+
+    @media screen and (max-width: {{ block.settings.styles_breakpoint }}px) {
+      & {
+        font-size: {{ block.settings.font_size_mobile }}px;
+      }
+    }
+  }
+{%- endstyle -%}
+
+{%- if block.settings.text != blank -%}
+  <div
+    class="mptt-description"
+    {{ block.shopify_attributes }}
+  >
+    <span class="visually-hidden">Product description: </span>
+    {{ block.settings.text }}
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Description",
+  "settings": [
+    { "type": "header", "content": "General" },
+    { "type": "header", "content": "Text" },
+    { "type": "richtext", "id": "text", "label": "Content", "default": "<p>Add your product description or custom text here.</p>" },
+    { "type": "range", "id": "font_size_desktop", "min": 10, "max": 50, "step": 1, "unit": "px", "label": "Font Size (Desktop)", "default": 20 },
+    { "type": "range", "id": "font_size_mobile", "min": 10, "max": 50, "step": 1, "unit": "px", "label": "Font Size (Mobile)", "default": 16 },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font Weight",
+      "options": [
+        { "value": "100", "label": "100 - Thin" },
+        { "value": "200", "label": "200 - Extra Light" },
+        { "value": "300", "label": "300 - Light" },
+        { "value": "400", "label": "400 - Normal" },
+        { "value": "500", "label": "500 - Medium" },
+        { "value": "600", "label": "600 - Semi Bold" },
+        { "value": "700", "label": "700 - Bold" },
+        { "value": "800", "label": "800 - Extra Bold" },
+        { "value": "900", "label": "900 - Boldest" }
+      ],
+      "default": "400"
+    },
+    { "type": "header", "content": "Color" },
+    { "type": "color", "id": "color", "label": "Color", "default": "#0F2918CC" },
+    { "type": "header", "content": "Spacings" },
+    {
+      "type": "range",
+      "id": "margin_top_desktop",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top (Desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top (Mobile)",
+      "default": 12
+    },
+    { "type": "header", "content": "Layout" },
+    {
+      "type": "range",
+      "id": "max_width_desktop",
+      "min": 200,
+      "max": 1200,
+      "step": 10,
+      "unit": "px",
+      "label": "Max-width (desktop)",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "max_width_mobile",
+      "min": 200,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "label": "Max-width (mobile)",
+      "default": 800
+    },
+    {
+      "type": "number",
+      "id": "styles_breakpoint",
+      "label": "Styles Breakpoint",
+      "default": 1200,
+      "info": "Defines the max-width for changes"
+    }
+  ],
+  "presets": [
+    { "name": "Description" }
+  ]
+}
+{% endschema %}
